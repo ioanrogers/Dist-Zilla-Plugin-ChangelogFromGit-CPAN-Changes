@@ -4,7 +4,7 @@ Dist::Zilla::Plugin::ChangelogFromGit::CPAN::Changes - Format Changelogs using C
 
 # VERSION
 
-version 0.0.1
+version 0.0.2
 
 # SEE ALSO
 
