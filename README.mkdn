@@ -1,0 +1,34 @@
+# NAME
+
+Dist::Zilla::Plugin::ChangelogFromGit::CPAN::Changes - Format Changelogs using CPAN::Changes
+
+# VERSION
+
+version 0.0.1
+
+# SEE ALSO
+
+[Dist::Zilla::Plugin::ChangelogFromGit::Debian](http://search.cpan.org/perldoc?Dist::Zilla::Plugin::ChangelogFromGit::Debian) which was used as a template for this
+
+# BUGS AND LIMITATIONS
+
+No bugs have been reported.
+
+Please report any bugs or feature requests through the web interface at
+[https://github.com/ioanrogers/Dist-Zilla-Plugin-ChangelogFromGit-CPAN-Changes/issues](https://github.com/ioanrogers/Dist-Zilla-Plugin-ChangelogFromGit-CPAN-Changes/issues).
+
+# SOURCE
+
+The development version is on github at [http://github.com/ioanrogers/Dist-Zilla-Plugin-ChangelogFromGit-CPAN-Changes](http://github.com/ioanrogers/Dist-Zilla-Plugin-ChangelogFromGit-CPAN-Changes)
+and may be cloned from [git://github.com/ioanrogers/Dist-Zilla-Plugin-ChangelogFromGit-CPAN-Changes.git](git://github.com/ioanrogers/Dist-Zilla-Plugin-ChangelogFromGit-CPAN-Changes.git)
+
+# AUTHOR
+
+Ioan Rogers <ioan.rogers@gmail.com>
+
+# COPYRIGHT AND LICENSE
+
+This software is copyright (c) 2012 by Ioan Rogers.
+
+This is free software; you can redistribute it and/or modify it under
+the same terms as the Perl 5 programming language system itself.
