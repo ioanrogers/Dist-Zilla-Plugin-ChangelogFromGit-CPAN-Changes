@@ -12,10 +12,8 @@ version 0.0.2
 
 # BUGS AND LIMITATIONS
 
-No bugs have been reported.
-
-Please report any bugs or feature requests through the web interface at
-[https://github.com/ioanrogers/Dist-Zilla-Plugin-ChangelogFromGit-CPAN-Changes/issues](https://github.com/ioanrogers/Dist-Zilla-Plugin-ChangelogFromGit-CPAN-Changes/issues).
+You can make new bug reports, and view existing ones, through the
+web interface at [https://github.com/ioanrogers/Dist-Zilla-Plugin-ChangelogFromGit-CPAN-Changes/issues](https://github.com/ioanrogers/Dist-Zilla-Plugin-ChangelogFromGit-CPAN-Changes/issues).
 
 # SOURCE
 
@@ -24,7 +22,7 @@ and may be cloned from [git://github.com/ioanrogers/Dist-Zilla-Plugin-ChangelogF
 
 # AUTHOR
 
-Ioan Rogers <ioan.rogers@gmail.com>
+Ioan Rogers <ioanr@cpan.org>
 
 # COPYRIGHT AND LICENSE
 
