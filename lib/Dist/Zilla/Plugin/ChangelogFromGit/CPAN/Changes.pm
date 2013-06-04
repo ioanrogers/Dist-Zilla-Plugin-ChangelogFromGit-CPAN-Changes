@@ -5,8 +5,24 @@ package Dist::Zilla::Plugin::ChangelogFromGit::CPAN::Changes;
 use Moose;
 use CPAN::Changes;
 use CPAN::Changes::Release;
+use Moose::Util::TypeConstraints;
+use String::Formatter 0.100680 stringf => {
+  -as => '_head_format',
+
+  input_processor => 'require_single_input',
+  string_replacer => 'method_replace',
+  codes => {
+    v => sub { $_[0] }
+  },
+};
 
 extends 'Dist::Zilla::Plugin::ChangelogFromGit';
+
+has head_format => (
+  is  => 'ro',
+  isa => 'Str',
+  default => 'v%v',
+);
 
 sub render_changelog {
     my ($self) = @_;
@@ -18,7 +34,7 @@ sub render_changelog {
 
         my $version = $release->version;
         if ( $version eq 'HEAD' ) {
-            $version = $self->zilla->version;
+            $version = _head_format($self->head_format, $self->zilla->version);
         }
 
         my $cpan_release = CPAN::Changes::Release->new(
@@ -51,6 +67,19 @@ sub render_changelog {
 __PACKAGE__->meta->make_immutable;
 
 1;
+
+__END__
+
+=for Pod::Coverage
+    provide_version
+
+=head1 SYNOPSIS
+
+In your F<dist.ini>:
+
+    [ChangelogFromGit::CPAN::Changes]
+    ; All options of [ChangelogFromGit], plus eventually:
+    head_format = %v            ; this is the default
 
 =head1 SEE ALSO
 
