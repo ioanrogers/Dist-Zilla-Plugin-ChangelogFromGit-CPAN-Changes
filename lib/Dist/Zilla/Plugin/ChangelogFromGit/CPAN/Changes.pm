@@ -25,6 +25,18 @@ want to show it [ Anne Author <anne@author.com> ]
 =cut
 has show_author_email => ( is => 'ro', isa => 'Bool', default => 0);
 
+has _git_tag => (
+    is      => 'ro',
+    lazy    => 1,
+    isa     => 'Maybe[Dist::Zilla::Plugin::Git::Tag]',
+    default => sub {
+        foreach (@{shift->zilla->plugins}) {
+            return $_ if ref eq 'Dist::Zilla::Plugin::Git::Tag';
+        }
+        return;
+    },
+);
+
 sub render_changelog {
     my ($self) = @_;
 
@@ -34,8 +46,12 @@ sub render_changelog {
         next if $release->has_no_changes;    # no empties
 
         my $version = $release->version;
-        if ( $version eq 'HEAD' ) {
-            $version = $self->zilla->version;
+        if ($version eq 'HEAD') {
+            if ($self->_git_tag) {
+                $version = $self->_git_tag->tag;
+            } else {
+                $version = $self->zilla->version;
+            }
         }
 
         my $cpan_release = CPAN::Changes::Release->new(
@@ -47,14 +63,13 @@ sub render_changelog {
             next if $change->description =~ /^\s+$/; # does git allow empty messages?
             
             my $author = $change->author_name;
-    
+
             if ($self->show_author_email) {
                 $author .= ' <' . $change->author_email . '>';
             }
-            
             my $desc = $change->description;
             chomp $desc;
-            
+
             if ($self->group_by_author) {
                 my $group = $author;
                 $cpan_release->add_changes( { group => $group }, $desc );
