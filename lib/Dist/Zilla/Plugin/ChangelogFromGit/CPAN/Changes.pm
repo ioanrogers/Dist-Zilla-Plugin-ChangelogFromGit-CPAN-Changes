@@ -8,6 +8,23 @@ use CPAN::Changes::Release;
 
 extends 'Dist::Zilla::Plugin::ChangelogFromGit';
 
+=attr group_by_author
+
+Whether to group commit messages by their author. This is the only way previous
+versions did it. Defaults to no, and [ Anne Author ] is appended to the commit
+message.
+
+=cut
+has group_by_author => ( is => 'ro', isa => 'Bool', default => 0);
+
+=attr show_author_email
+
+Author email is probably just noise for most people, but turn this on if you
+want to show it [ Anne Author <anne@author.com> ]
+
+=cut
+has show_author_email => ( is => 'ro', isa => 'Bool', default => 0);
+
 sub render_changelog {
     my ($self) = @_;
 
@@ -27,19 +44,23 @@ sub render_changelog {
         );
 
         foreach my $change ( @{ $release->changes } ) {
-            next if ( $change->description =~ /^\s/ );    # no empties
-            my $group = $change->author_name;
-
-            # sometimes author_name contains the "Full Name <email@address.com>"
-            # sometimes not, so do a lazy check
-            if ( $change->author_name !~ m/@/ ) {
-                $group .= ' <' . $change->author_email . '>';
+            next if $change->description =~ /^\s+$/; # does git allow empty messages?
+            
+            my $author = $change->author_name;
+    
+            if ($self->show_author_email) {
+                $author .= ' <' . $change->author_email . '>';
             }
-
-            # XXX: do we want the change_id?
-            # $group .= ' ' .  $change->change_id;
-
-            $cpan_release->add_changes( { group => $group }, $change->description, );
+            
+            my $desc = $change->description;
+            chomp $desc;
+            
+            if ($self->group_by_author) {
+                my $group = $author;
+                $cpan_release->add_changes( { group => $group }, $desc );
+            } else {
+                $cpan_release->add_changes( $desc . " [$author]" );
+            }
         }
 
         $cpan_changes->add_release($cpan_release);
@@ -51,6 +72,13 @@ sub render_changelog {
 __PACKAGE__->meta->make_immutable;
 
 1;
+
+=head1 SYNOPSIS
+
+ [ChangelogFromGit::CPAN::Changes]
+ ; All options from [ChangelogFromGit] plus
+ group_by_author = 1 ; default 0
+ show_author_email = 1 ; default 0
 
 =head1 SEE ALSO
 
