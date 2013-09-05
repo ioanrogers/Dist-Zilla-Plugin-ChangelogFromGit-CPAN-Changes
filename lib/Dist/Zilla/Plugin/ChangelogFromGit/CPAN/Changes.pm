@@ -25,6 +25,14 @@ want to show it [ Anne Author <anne@author.com> ]
 =cut
 has show_author_email => ( is => 'ro', isa => 'Bool', default => 0);
 
+=attr show_author
+
+Whether to show authors at all. Enabled by default. Turning this off also
+turns off grouping by author and author emails.
+
+=cut
+has show_author => ( is => 'ro', isa => 'Bool', default => 1);
+
 has _git_tag => (
     is      => 'ro',
     lazy    => 1,
@@ -61,20 +69,25 @@ sub render_changelog {
 
         foreach my $change ( @{ $release->changes } ) {
             next if $change->description =~ /^\s+$/; # does git allow empty messages?
-            
-            my $author = $change->author_name;
 
-            if ($self->show_author_email) {
-                $author .= ' <' . $change->author_email . '>';
-            }
             my $desc = $change->description;
             chomp $desc;
 
-            if ($self->group_by_author) {
-                my $group = $author;
-                $cpan_release->add_changes( { group => $group }, $desc );
+            if ($self->show_author) {            
+                my $author = $change->author_name;
+
+                if ($self->show_author_email) {
+                    $author .= ' <' . $change->author_email . '>';
+                }
+
+                if ($self->group_by_author) {
+                    my $group = $author;
+                    $cpan_release->add_changes( { group => $group }, $desc );
+                } else {
+                    $cpan_release->add_changes( $desc . " [$author]" );
+                }
             } else {
-                $cpan_release->add_changes( $desc . " [$author]" );
+                $cpan_release->add_changes( $desc );
             }
         }
 
