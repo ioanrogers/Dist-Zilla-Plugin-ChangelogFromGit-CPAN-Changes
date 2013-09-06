@@ -4,7 +4,32 @@ Dist::Zilla::Plugin::ChangelogFromGit::CPAN::Changes - Format Changelogs using C
 
 # VERSION
 
-version 0.0.2
+version 0.0.4
+
+# SYNOPSIS
+
+    [ChangelogFromGit::CPAN::Changes]
+    ; All options from [ChangelogFromGit] plus
+    group_by_author = 1 ; default 0
+    show_author_email = 1 ; default 0
+
+# ATTRIBUTES
+
+## group\_by\_author
+
+Whether to group commit messages by their author. This is the only way previous
+versions did it. Defaults to no, and \[ Anne Author \] is appended to the commit
+message.
+
+## show\_author\_email
+
+Author email is probably just noise for most people, but turn this on if you
+want to show it \[ Anne Author <anne@author.com> \]
+
+## show\_author
+
+Whether to show authors at all. Enabled by default. Turning this off also
+turns off grouping by author and author emails.
 
 # SEE ALSO
 
@@ -26,7 +51,7 @@ Ioan Rogers <ioanr@cpan.org>
 
 # COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2012 by Ioan Rogers.
+This software is copyright (c) 2013 by Ioan Rogers.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
