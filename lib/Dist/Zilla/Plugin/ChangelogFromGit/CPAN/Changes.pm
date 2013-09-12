@@ -33,6 +33,20 @@ turns off grouping by author and author emails.
 =cut
 has show_author => ( is => 'ro', isa => 'Bool', default => 1);
 
+=attr parse_version_tag
+
+Parse generated version tag using tag_regexp to place CPAN::Changes::Spec
+compliant version tag in CHANGES file.
+use this if your git tag doesn't follow L<CPAN::Changes::Spec> standard.
+
+=cut
+
+has parse_version_from_tag => (
+    is      => 'ro',
+    isa     => 'Bool',
+    default => 0,
+);
+
 has _git_tag => (
     is      => 'ro',
     lazy    => 1,
@@ -49,6 +63,8 @@ sub render_changelog {
     my ($self) = @_;
 
     my $cpan_changes = CPAN::Changes->new( preamble => 'Changelog for ' . $self->zilla->name, );
+    
+    my $tag_pattern = $self->tag_regexp();
 
     foreach my $release ( reverse $self->all_releases ) {
         next if $release->has_no_changes;    # no empties
@@ -61,6 +77,11 @@ sub render_changelog {
                 $version = $self->zilla->version;
             }
         }
+
+        if ($self->parse_version_from_tag){
+            $version =~ /$tag_pattern/o;
+            $version = $1;
+        } 
 
         my $cpan_release = CPAN::Changes::Release->new(
             version => $version,
