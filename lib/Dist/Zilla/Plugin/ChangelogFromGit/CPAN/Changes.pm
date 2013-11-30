@@ -1,4 +1,7 @@
 package Dist::Zilla::Plugin::ChangelogFromGit::CPAN::Changes;
+{
+  $Dist::Zilla::Plugin::ChangelogFromGit::CPAN::Changes::VERSION = '0.0.5';
+}
 
 # ABSTRACT: Format Changelogs using CPAN::Changes
 
@@ -8,39 +11,12 @@ use CPAN::Changes::Release;
 
 extends 'Dist::Zilla::Plugin::ChangelogFromGit';
 
-=attr group_by_author
-
-Whether to group commit messages by their author. This is the only way previous
-versions did it. Defaults to no, and [ Anne Author ] is appended to the commit
-message.
-
-=cut
 has group_by_author => ( is => 'ro', isa => 'Bool', default => 0);
 
-=attr show_author_email
-
-Author email is probably just noise for most people, but turn this on if you
-want to show it [ Anne Author <anne@author.com> ]
-
-=cut
 has show_author_email => ( is => 'ro', isa => 'Bool', default => 0);
 
-=attr show_author
-
-Whether to show authors at all. Enabled by default. Turning this off also
-turns off grouping by author and author emails.
-
-=cut
 has show_author => ( is => 'ro', isa => 'Bool', default => 1);
 
-=attr transform_version_tag
-
-Transform a git version tag to one compliant with L<CPAN::Changes::Spec> using
-C<tag_regexp>. Use this if your git tag doesn't follow the standard.
-
-Defaults to off.
-
-=cut
 
 has transform_version_tag => (
     is      => 'ro',
@@ -126,6 +102,18 @@ __PACKAGE__->meta->make_immutable;
 
 1;
 
+__END__
+
+=pod
+
+=head1 NAME
+
+Dist::Zilla::Plugin::ChangelogFromGit::CPAN::Changes - Format Changelogs using CPAN::Changes
+
+=head1 VERSION
+
+version 0.0.5
+
 =head1 SYNOPSIS
 
  [ChangelogFromGit::CPAN::Changes]
@@ -135,6 +123,54 @@ __PACKAGE__->meta->make_immutable;
  show_author           = 0 ; default 1
  transform_version_tag = 1 ; default 0
 
+=head1 ATTRIBUTES
+
+=head2 group_by_author
+
+Whether to group commit messages by their author. This is the only way previous
+versions did it. Defaults to no, and [ Anne Author ] is appended to the commit
+message.
+
+=head2 show_author_email
+
+Author email is probably just noise for most people, but turn this on if you
+want to show it [ Anne Author <anne@author.com> ]
+
+=head2 show_author
+
+Whether to show authors at all. Enabled by default. Turning this off also
+turns off grouping by author and author emails.
+
+=head2 transform_version_tag
+
+Transform a git version tag to one compliant with L<CPAN::Changes::Spec> using
+C<tag_regexp>. Use this if your git tag doesn't follow the standard.
+
+Defaults to off.
+
 =head1 SEE ALSO
 
 L<Dist::Zilla::Plugin::ChangelogFromGit::Debian> which was used as a template for this
+
+=head1 BUGS AND LIMITATIONS
+
+You can make new bug reports, and view existing ones, through the
+web interface at L<https://github.com/ioanrogers/Dist-Zilla-Plugin-ChangelogFromGit-CPAN-Changes/issues>.
+
+=head1 SOURCE
+
+The development version is on github at L<http://github.com/ioanrogers/Dist-Zilla-Plugin-ChangelogFromGit-CPAN-Changes>
+and may be cloned from L<git://github.com/ioanrogers/Dist-Zilla-Plugin-ChangelogFromGit-CPAN-Changes.git>
+
+=head1 AUTHOR
+
+Ioan Rogers <ioanr@cpan.org>
+
+=head1 COPYRIGHT AND LICENSE
+
+This software is copyright (c) 2013 by Ioan Rogers.
+
+This is free software; you can redistribute it and/or modify it under
+the same terms as the Perl 5 programming language system itself.
+
+=cut

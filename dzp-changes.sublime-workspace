@@ -1,0 +1,2069 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"sor",
+				"sorted_commits"
+			],
+			[
+				"cu",
+				"cur_commit"
+			],
+			[
+				"comm",
+				"commits"
+			],
+			[
+				"format",
+				"format_str"
+			],
+			[
+				"log",
+				"log_format"
+			],
+			[
+				"for",
+				"format_str"
+			],
+			[
+				"commi",
+				"commit"
+			],
+			[
+				"commit",
+				"commit_tree"
+			],
+			[
+				"com",
+				"commit"
+			],
+			[
+				"ver",
+				"versions"
+			],
+			[
+				"arra",
+				"array_size"
+			],
+			[
+				"so",
+				"socket"
+			],
+			[
+				"io",
+				"iovec_base"
+			],
+			[
+				"jour",
+				"journal_send"
+			],
+			[
+				"soc",
+				"socket_path"
+			],
+			[
+				"return",
+				"return_path"
+			],
+			[
+				"sub",
+				"subscription"
+			],
+			[
+				"r",
+				"return"
+			],
+			[
+				"ful",
+				"full_path"
+			],
+			[
+				"key",
+				"keywords"
+			],
+			[
+				"code",
+				"code_generator"
+			],
+			[
+				"pa",
+				"package"
+			],
+			[
+				"su",
+				"subs"
+			],
+			[
+				"_load",
+				"_load_handler_routes"
+			],
+			[
+				"hand",
+				"handler"
+			],
+			[
+				"path",
+				"path_info"
+			],
+			[
+				"po",
+				"phonenumber"
+			],
+			[
+				"subsc",
+				"subscribe"
+			],
+			[
+				"han",
+				"handler"
+			],
+			[
+				"handler",
+				"handlers_ref"
+			],
+			[
+				"handle",
+				"handlers_ref"
+			],
+			[
+				"ha",
+				"handler_base"
+			],
+			[
+				"re",
+				"res_code"
+			],
+			[
+				"Ha",
+				"Handler"
+			],
+			[
+				"_get",
+				"_get_partner_data"
+			],
+			[
+				"conf",
+				"confirmation"
+			],
+			[
+				"er",
+				"err_desc"
+			],
+			[
+				"par",
+				"partners"
+			],
+			[
+				"_",
+				"_show_toplist_guest"
+			],
+			[
+				"la",
+				"latest_rev"
+			],
+			[
+				"sel",
+				"self-"
+			],
+			[
+				"email",
+				"email_hex"
+			],
+			[
+				"con",
+				"conf_class"
+			],
+			[
+				"c",
+				"conf_file"
+			],
+			[
+				"te",
+				"test"
+			],
+			[
+				"fi",
+				"file"
+			],
+			[
+				"list",
+				"list_file"
+			],
+			[
+				"srv",
+				"serv_entry_count"
+			],
+			[
+				"ser",
+				"serv_entry"
+			],
+			[
+				"se",
+				"servlist"
+			],
+			[
+				"fil",
+				"list_file"
+			],
+			[
+				"lis",
+				"list_file"
+			],
+			[
+				"subs",
+				"subscribe"
+			],
+			[
+				"subscr",
+				"subscription"
+			],
+			[
+				"mail",
+				"mail_list_sub_tmpl"
+			],
+			[
+				"tem",
+				"templates_dir"
+			],
+			[
+				"tmpl",
+				"tmpl_dir"
+			],
+			[
+				"veri",
+				"verify"
+			],
+			[
+				"pac",
+				"package_details"
+			],
+			[
+				"fo",
+				"format"
+			],
+			[
+				"pack",
+				"package_details"
+			],
+			[
+				"pla",
+				"platform_vars"
+			],
+			[
+				"ve",
+				"version_full"
+			],
+			[
+				"si",
+				"size"
+			],
+			[
+				"versoin",
+				"version_full"
+			],
+			[
+				"dow",
+				"download_vars"
+			],
+			[
+				"do",
+				"download_vars"
+			],
+			[
+				"js",
+				"json_file"
+			],
+			[
+				"j",
+				"json_file"
+			],
+			[
+				"sy",
+				"system"
+			],
+			[
+				"is",
+				"is_deb"
+			],
+			[
+				"ou",
+				"out_file"
+			],
+			[
+				"wi",
+				"windows"
+			],
+			[
+				"down",
+				"download_inc"
+			],
+			[
+				"co",
+				"country_relations"
+			],
+			[
+				"requi",
+				"require_ok"
+			],
+			[
+				"log_",
+				"log_file"
+			],
+			[
+				"tm",
+				"tmpl_vars"
+			],
+			[
+				"vou",
+				"voucher_code"
+			],
+			[
+				"ses",
+				"sess_type"
+			],
+			[
+				"vali",
+				"valid_types"
+			],
+			[
+				"SESS",
+				"SESS_TYPE_VOUCHER"
+			],
+			[
+				"S",
+				"SESS_TYPE_USER"
+			],
+			[
+				"valid",
+				"validate"
+			],
+			[
+				"em",
+				"email_valid"
+			],
+			[
+				"ac",
+				"actions"
+			],
+			[
+				"a",
+				"attachment"
+			],
+			[
+				"atta",
+				"attachment"
+			],
+			[
+				"ti",
+				"ticket_id"
+			],
+			[
+				"tci",
+				"ticket_id"
+			],
+			[
+				"vo",
+				"vouchers"
+			],
+			[
+				"rese",
+				"reseller"
+			],
+			[
+				"vouch",
+				"voucher_status"
+			],
+			[
+				"sal",
+				"sale_id"
+			],
+			[
+				"tr",
+				"trans_id"
+			],
+			[
+				"add",
+				"add_vars"
+			],
+			[
+				"ena",
+				"enable_debug"
+			],
+			[
+				"to",
+				"to_screen"
+			],
+			[
+				"de",
+				"enable_debug"
+			],
+			[
+				"debug",
+				"debugf"
+			],
+			[
+				"user",
+				"username"
+			],
+			[
+				"tra",
+				"trans_info"
+			],
+			[
+				"pr",
+				"products"
+			],
+			[
+				"im",
+				"image_data"
+			],
+			[
+				"ra",
+				"random_number"
+			],
+			[
+				"cle",
+				"clear_captcha"
+			],
+			[
+				"cap",
+				"captcha_bin"
+			],
+			[
+				"_bu",
+				"_build_code"
+			],
+			[
+				"va",
+				"valid_code"
+			],
+			[
+				"uni",
+				"unique_value"
+			],
+			[
+				"uniq",
+				"unique"
+			],
+			[
+				"ter",
+				"territoryStateNameFromCode"
+			],
+			[
+				"terr",
+				"territoryIsValidCountryIndex"
+			],
+			[
+				"n",
+				"new_vars"
+			],
+			[
+				"i",
+				"i18n_dir"
+			],
+			[
+				"data",
+				"database"
+			],
+			[
+				"env",
+				"env_file"
+			],
+			[
+				"inc",
+				"include_dir"
+			],
+			[
+				"w",
+				"wfcfg"
+			],
+			[
+				"cou",
+				"country_code"
+			],
+			[
+				"file",
+				"filename"
+			],
+			[
+				"htt",
+				"https_base_url"
+			],
+			[
+				"ut",
+				"utf8_str"
+			],
+			[
+				"tes",
+				"test_dir"
+			],
+			[
+				"tmp",
+				"tmp_dir"
+			],
+			[
+				"tmp_",
+				"tmp_file"
+			],
+			[
+				"t",
+				"tmp_dir"
+			],
+			[
+				"s",
+				"src_dir"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "lib/Dist/Zilla/Plugin/ChangelogFromGit/CPAN/Changes.pm",
+			"settings":
+			{
+				"buffer_size": 11213,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "git_log.pl",
+			"settings":
+			{
+				"buffer_size": 2059,
+				"line_ending": "Unix",
+				"name": "#!/usr/bin/env perl"
+			}
+		},
+		{
+			"file": "/home/ioan/perl5/perlbrew/perls/perl-5.18.1/lib/site_perl/5.18.1/Dist/Zilla/Plugin/ChangelogFromGit.pm",
+			"settings":
+			{
+				"buffer_size": 24194,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "dist.ini",
+			"settings":
+			{
+				"buffer_size": 1093,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"ng",
+				"Set Syntax: nginx"
+			],
+			[
+				"ngin",
+				"Set Syntax: nginx"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"lo",
+				"Convert Case: Lower Case"
+			],
+			[
+				"ti",
+				"PerlTidy: Tidy"
+			],
+			[
+				"tid",
+				"PerlTidy: Tidy"
+			],
+			[
+				"lower",
+				"Convert Case: Lower Case"
+			],
+			[
+				"lowe",
+				"Convert Case: Lower Case"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"low",
+				"Convert Case: Lower Case"
+			],
+			[
+				"up",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"upgr",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"low	",
+				"Convert Case: Lower Case"
+			],
+			[
+				"perl",
+				"PerlTidy: Tidy"
+			],
+			[
+				"cta",
+				"CTags: Show Symbols (file)"
+			],
+			[
+				"",
+				"CTags: Rebuild Tags"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"tidy",
+				"PerlTidy: Tidy"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"todo",
+				"Show TODOs: Open files only"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"instak",
+				"Package Control: Install Package"
+			],
+			[
+				"package",
+				"Package Control: Install Package"
+			],
+			[
+				"mem",
+				"memTask: Show spent time"
+			],
+			[
+				"diff",
+				"Git: Diff Tool All"
+			],
+			[
+				"comme",
+				"Toggle Comment"
+			],
+			[
+				"to",
+				"Show TODOs: Project and open files"
+			],
+			[
+				"tod",
+				"Show TODOs: Project and open files"
+			],
+			[
+				"TODO",
+				"Show TODOs: Project and open files"
+			],
+			[
+				"prev",
+				"Markdown Preview: preview in Browser"
+			],
+			[
+				"pre",
+				"Markdown Preview: preview in Browser"
+			],
+			[
+				"preview",
+				"Markdown Preview: preview in Browser"
+			],
+			[
+				"markdown",
+				"Set Syntax: Markdown (Github Flavored)"
+			],
+			[
+				"insert",
+				"MarkdownTOC:Insert TOC"
+			],
+			[
+				"linter",
+				"SublimeLinter: Extract Annotations"
+			],
+			[
+				"sublimelinter",
+				"SublimeLinter: Extract Annotations"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"lint",
+				"Preferences: SublimeLint – Default"
+			],
+			[
+				"pack ins",
+				"Package Control: Install Package"
+			],
+			[
+				"dif",
+				"Sublimerge: View Diff"
+			],
+			[
+				"pack in",
+				"Package Control: Install Package"
+			],
+			[
+				"git diff",
+				"Git: Diff Current File"
+			],
+			[
+				"web",
+				"Web Inspector"
+			],
+			[
+				"package in",
+				"Package Control: Install Package"
+			],
+			[
+				"package ins",
+				"Package Control: Install Package"
+			],
+			[
+				"packake",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: inst",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 392.0
+	},
+	"console":
+	{
+		"height": 167.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/ioan/Dropbox/Projects/Dist-Zilla-Plugin/Dist-Zilla-Plugin-ChangelogFromGit-CPAN-Changes/lib/Dist/Zilla/Plugin/ChangelogFromGit/CPAN/Changes/Types.pm",
+		"/home/ioan/Dropbox/Projects/Dist-Zilla-Plugin/Dist-Zilla-Plugin-ChangelogFromGit-CPAN-Changes/Dist-Zilla-Plugin-ChangelogFromGit-CPAN-Changes-0.0.4/Changes",
+		"/home/ioan/Dropbox/Projects/Linux/Linux-Systemd-Journal/Linux-Systemd-Journal/lib/Linux/Systemd/Journal/Constants.pm",
+		"/home/ioan/Dropbox/Projects/Linux/Linux-Systemd-Journal/systemd/src/shared/mkdir.h",
+		"/home/ioan/Dropbox/dirtysoft.ca.zone",
+		"/home/ioan/Dropbox/Projects/Linux/Linux-Systemd-Journal/Linux-Systemd-Journal/lib/Linux/Systemd/Journal/Read.xs",
+		"/home/ioan/Dropbox/Projects/Linux/Linux-Systemd-Journal/Linux-Systemd-Journal/lib/Linux/Systemd/Journal/Read.pm",
+		"/home/ioan/Dropbox/Projects/Linux/Linux-Systemd-Journal/Linux-Systemd-Journal/lib/Linux/Systemd/Journal/Write.pm",
+		"/home/ioan/Dropbox/Projects/Linux/Linux-Systemd-Journal/Linux-Systemd-Journal/lib/Linux/Systemd/Journal/Write.xs",
+		"/home/ioan/Dropbox/Projects/Linux/Linux-Systemd-Journal/Linux-Systemd-Journal/lib/Linux/Systemd/Journal/Read/XS.pm",
+		"/home/ioan/Dropbox/Projects/Linux/Linux-Systemd-Journal/systemd/src/journal/journald-native.c",
+		"/home/ioan/Dropbox/Projects/Linux/Linux-Systemd-Journal/systemd/src/shared/macro.h",
+		"/home/ioan/Dropbox/Projects/Linux/Linux-Systemd-Journal/systemd/src/journal/journal-def.h",
+		"/home/ioan/Dropbox/Projects/Linux/Linux-Systemd-Journal/Linux-Systemd-Journal/send_journal.pl",
+		"/home/ioan/Dropbox/Projects/Linux/Linux-Systemd-Journal/eg.pl",
+		"/home/ioan/Dropbox/Projects/pdns_backend.pl",
+		"/home/ioan/Dropbox/Projects/Linux/Linux-Systemd-Journal/systemd/src/journal/test-journal-send.c",
+		"/home/ioan/Dropbox/Projects/Linux/Linux-Systemd-Journal/Linux-Systemd-Journal/send_journal.c",
+		"/home/ioan/ts.txt",
+		"/home/ioan/.TimeTracker/2013/09/20130901-011034_website.trc",
+		"/home/ioan/sep.txt",
+		"/home/ioan/bin/timesheet_report.pl",
+		"/home/ioan/Dropbox/Projects/App-WorkLog/lib/App/WorkLog/Import/TimeTracker.pm",
+		"/home/ioan/Dropbox/Projects/App-WorkLog/Github.pm",
+		"/home/ioan/Dropbox/Projects/App-WorkLog/timesheet_report.pl",
+		"/home/ioan/Projects/Wi-Free/website/lib/WiFree/LightCMS/Web/Handler/Subscribe.pm",
+		"/home/ioan/Projects/Wi-Free/website/lib/WiFree/LightCMS/Web/DSL.pm",
+		"/home/ioan/Projects/Wi-Free/website/src/wifreeconfig/wifree.ini.tt",
+		"/home/ioan/Projects/Wi-Free/website/lib/WiFree/LightCMS/Web/Session.pm",
+		"/home/ioan/Dropbox/Projects/Wi-Free/website/lib/WiFree/LightCMS/Web/LiveChat.pm",
+		"/home/ioan/Projects/Wi-Free/website/lib/WiFree/LightCMS/Web/Handler/Captcha.pm",
+		"/home/ioan/Dropbox/Projects/Wi-Free/website/src/include/_sidebar.tt",
+		"/home/ioan/Dropbox/Projects/Wi-Free/website/src/layout/default.tt",
+		"/home/ioan/Dropbox/Projects/Wi-Free/website/src/include/_area_user_promo.tt",
+		"/home/ioan/Dropbox/Projects/Wi-Free/website/src/nginxconfig/nginx-rewrite-common.conf.tt",
+		"/home/ioan/Dropbox/Projects/Wi-Free/website/src/nginxconfig/nginx-locations-common.conf.tt",
+		"/home/ioan/Dropbox/Projects/Wi-Free/website/lib/WiFree/LightCMS/Log.pm",
+		"/home/ioan/dsl.pl",
+		"/home/ioan/DSL.pm",
+		"/home/ioan/Projects/Wi-Free/website/lib/WiFree/LightCMS/Web/Role/DSL.pm",
+		"/home/ioan/Projects/Wi-Free/website/ppi_dump.pl",
+		"/home/ioan/.config/sublime-text-3/Packages/User/SublimeLinter.sublime-settings",
+		"/home/ioan/bin2/passgen.pl",
+		"/home/ioan/Projects/Wi-Free/website/lib/WiFree/LightCMS/Role/Common.pm",
+		"/home/ioan/Projects/Wi-Free/website/lib/WiFree/LightCMS/Web/Users.pm",
+		"/home/ioan/Projects/Wi-Free/website/src/include/_sidebar.tt",
+		"/home/ioan/Projects/Wi-Free/website/lib/WiFree/LightCMS/Web/Press.pm",
+		"/home/ioan/.config/sublime-text-3/Packages/SublimeLinter/SublimeLinter.sublime-settings",
+		"/home/ioan/Dropbox/Projects/Wi-Free/website/lib/WiFree/LightCMS.pm",
+		"/home/ioan/Projects/Wi-Free/website/lib/WiFree/LightCMS/Role/Web.pm",
+		"/home/ioan/Dropbox/Projects/Wi-Free/website/lib/WiFree/LightCMS/Web/Handlers/Login.pm",
+		"/home/ioan/Dropbox/Projects/Wi-Free/website/lib/WiFree/LightCMS/Web/Session.pm",
+		"/home/ioan/Dropbox/Projects/Wi-Free/website/src/templates/users/panel.html.tt",
+		"/home/ioan/Dropbox/Projects/Wi-Free/website/src/include/_login_head.tt",
+		"/home/ioan/Dropbox/Projects/Wi-Free/website/src/include/_area_user_head.tt",
+		"/home/ioan/Dropbox/Projects/Wi-Free/website/src/include/_common_header.tt",
+		"/home/ioan/Dropbox/Projects/Wi-Free/website/lib/WiFree/LightCMS/Web/Handlers/Partners.pm",
+		"/home/ioan/Dropbox/Projects/Wi-Free/website/lib/WiFree/LightCMS/Web/Handlers/Users.pm",
+		"/home/ioan/Dropbox/Projects/Wi-Free/website/lib/WiFree/LightCMS/Web/Handler.pm",
+		"/home/ioan/Dropbox/Projects/Wi-Free/website/lib/WiFree/LightCMS/Role/DB.pm",
+		"/home/ioan/lightcms-fcgi",
+		"/home/ioan/Dropbox/Projects/Wi-Free/website/lib/WiFree/LightCMS/Web.pm",
+		"/home/ioan/Dropbox/Projects/Wi-Free/website/bin/lightcms-server.psgi",
+		"/home/ioan/Dropbox/Projects/Wi-Free/website/lib/WiFree/LightCMS/Web/Partners.pm",
+		"/home/ioan/Dropbox/Projects/Wi-Free/website/src/templates/users/signup.html.tt",
+		"/home/ioan/Dropbox/Projects/Wi-Free/website/bin/lightcms-fcgi",
+		"/home/ioan/Dropbox/Projects/Wi-Free/website/lib/WiFree/LightCMS/Std.pm",
+		"/home/ioan/Dropbox/Projects/Wi-Free/website/lib/WiFree/LightCMS/Web/Press.pm",
+		"/home/ioan/Dropbox/Projects/Wi-Free/website/src/include/_area_reseller_head.tt",
+		"/home/ioan/Dropbox/Projects/Wi-Free/website/lib/WiFree/LightCMS/Web/Handlers/Status.pm",
+		"/home/ioan/Dropbox/Projects/Wi-Free/website/lib/WiFree/LightCMS/Web/Handlers/ServList.pm",
+		"/home/ioan/Dropbox/Projects/Wi-Free/website/src/templates/email/registration.eml.tt",
+		"/home/ioan/register.pl",
+		"/home/ioan/confirm.pl",
+		"/home/ioan/Dropbox/Projects/Wi-Free/website/bin/lightcms-web",
+		"/home/ioan/Dropbox/Projects/Wi-Free/website/lib/WiFree/LightCMS/Web/Routes/Partners.pm",
+		"/home/ioan/Dropbox/Projects/Wi-Free/website/lib/WiFree/LightCMS/Web/Model/Partners.pm",
+		"/home/ioan/Dropbox/Projects/Wi-Free/website/lib/WiFree/LightCMS/Web/Handlers/Routes/Partners.pm",
+		"/home/ioan/partner_login.pm",
+		"/home/ioan/users_login.pm",
+		"/home/ioan/Dropbox/Projects/Wi-Free/website/lib/WiFree/LightCMS/Role/URL.pm",
+		"/home/ioan/Dropbox/Projects/Wi-Free/website/lib/WiFree/LightCMS/Role/Plugin.pm",
+		"/home/ioan/Dropbox/Projects/Wi-Free/website/src/wifreeconfig/wifree.ini.tt",
+		"/home/ioan/Dropbox/Projects/Wi-Free/website/lib/WiFree/LightCMS/Web/Ticket.pm",
+		"/home/ioan/Dropbox/Projects/Wi-Free/website/lib/WiFree/LightCMS/Web/ServList.pm",
+		"/home/ioan/Dropbox/Projects/Wi-Free/website/src/templates/status/phone.html.tt",
+		"/home/ioan/Dropbox/Projects/Wi-Free/website/src/templates/server_list.html.tt",
+		"/home/ioan/Dropbox/Projects/Wi-Free/website/src/templates/email/mail_list_sub.eml.tt",
+		"/home/ioan/Dropbox/Projects/Wi-Free/website/src/nginxconfig/nginx-locations-nossl.conf.tt",
+		"/home/ioan/Dropbox/Projects/Wi-Free/website/src/nginxconfig/nginx-server.conf.tt",
+		"/home/ioan/Dropbox/Projects/Wi-Free/website/t/20-servlist.t",
+		"/home/ioan/Dropbox/Projects/Wi-Free/website/t/lib/Test/Package.pm",
+		"/home/ioan/Dropbox/Projects/Wi-Free/website/t/data/servlist.yaml",
+		"/home/ioan/Dropbox/Projects/Wi-Free/website/t/env/web.ini",
+		"/home/ioan/Dropbox/Projects/Wi-Free/website/t/env/test.ini",
+		"/home/ioan/Dropbox/Projects/Wi-Free/website/t/data/servlist_wrong.yaml",
+		"/home/ioan/Dropbox/Projects/Wi-Free/website/t/05-stash.t",
+		"/home/ioan/Dropbox/Projects/Wi-Free/website/lib/WiFree/LightCMS/Schema.pm",
+		"/home/ioan/Dropbox/Projects/Wi-Free/website/lib/WiFree/LightCMS/Web/Handlers/Update.pm",
+		"/home/ioan/Dropbox/Projects/Wi-Free/website/lib/WiFree/LightCMS/Web/Downloads.pm",
+		"/home/ioan/Dropbox/Projects/Wi-Free/website/lib/WiFree/LightCMS/Config/Web.pm",
+		"/home/ioan/Dropbox/Projects/Wi-Free/website/lib/WiFree/LightCMS/Sendmail.pm",
+		"/home/ioan/Dropbox/Projects/Wi-Free/wi-free-gui/qt/src/wf_softwareupd.cpp",
+		"/home/ioan/Dropbox/Projects/Wi-Free/wi-free-gui/qt/src/std.cpp",
+		"/home/ioan/Dropbox/Projects/Wi-Free/website/lib/WiFree/LightCMS/Web/Handlers/Admin.pm",
+		"/home/ioan/Dropbox/Projects/Wi-Free/website/lib/WiFree/LightCMS/Web/Users.pm",
+		"/home/ioan/Dropbox/Projects/Wi-Free/website/src/templates/subscription.html.tt",
+		"/home/ioan/Dropbox/Projects/Wi-Free/website/lib/WiFree/LightCMS/Role/HTML2.pm",
+		"/home/ioan/Dropbox/Projects/Wi-Free/website/lib/WiFree/LightCMS/Template.pm",
+		"/home/ioan/Dropbox/Projects/Wi-Free/website/lib/WiFree/LightCMS/Plugin/Downloads.pm",
+		"/home/ioan/Dropbox/Projects/Wi-Free/website/src/assets/css/style.css.tt",
+		"/home/ioan/Dropbox/Projects/Wi-Free/website/src/templates/status/download.html.tt",
+		"/home/ioan/Dropbox/Projects/Wi-Free/website/src/static/contacts.html.tt",
+		"/home/ioan/Dropbox/Projects/Wi-Free/website/src/static/download.html.tt",
+		"/home/ioan/Dropbox/Projects/Wi-Free/website/src/static/encryption.html.tt",
+		"/home/ioan/Dropbox/Projects/Wi-Free/website/src/static/how_it_works.html.tt",
+		"/home/ioan/Dropbox/Projects/Wi-Free/website/src/static/index.html.tt",
+		"/home/ioan/Dropbox/Projects/Wi-Free/website/bin/lightcms",
+		"/home/ioan/Dropbox/bench_str_cmp.pl",
+		"/home/ioan/Dropbox/Projects/Wi-Free/website/src/include/_area_reseller_promo.tt",
+		"/home/ioan/Dropbox/Projects/Wi-Free/website/lib/WiFree/LightCMS/Plugin/WiFreeConfig.pm",
+		"/home/ioan/Dropbox/Projects/Wi-Free/website/lib/WiFree/LightCMS/Plugin/PressReleases.pm",
+		"/home/ioan/Dropbox/Projects/Wi-Free/website/src/include/_common_footer.tt",
+		"/home/ioan/Dropbox/Projects/Wi-Free/website/utils/livechat_status_update.pl",
+		"/home/ioan/Dropbox/Projects/Wi-Free/website/lib/WiFree/LightCMS/Role/HTML.pm",
+		"/home/ioan/Dropbox/Projects/Wi-Free/website/lib/WiFree/LightCMS/Role/Image.pm",
+		"/home/ioan/rand_country.pl",
+		"/home/ioan/Dropbox/Projects/Wi-Free/website/lib/WiFree/LightCMS/Role/Config.pm"
+	],
+	"find":
+	{
+		"height": 37.0
+	},
+	"find_in_files":
+	{
+		"height": 99.0,
+		"where_history":
+		[
+			"/home/ioan/Dropbox/Projects/Wi-Free/website/",
+			"/home/ioan/Dropbox/Projects/Wi-Free/website/lib/WiFree/LightCMS/",
+			"/home/ioan/Dropbox/Projects/Wi-Free/website/lib/WiFree/LightCMS/Web",
+			"/home/ioan/Dropbox/Projects/Wi-Free/website/t/",
+			"/home/ioan/Dropbox/Projects/Wi-Free/website/lib",
+			"/home/ioan/Dropbox/Projects/Wi-Free/website/lightcms/lib",
+			"/home/ioan/Dropbox/Projects/Wi-Free/website/lightcms/src/pressreleases/en",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"debug",
+			"sd_journal_sendv",
+			"journal_fd",
+			"fill_iovec_sprintf",
+			"$self->query",
+			"ssi",
+			"load_class",
+			"40",
+			" @",
+			"perl",
+			"actionDownload",
+			"actionCaptcha",
+			"db",
+			"path",
+			"build",
+			"SESS_",
+			"SESS",
+			"process",
+			"work",
+			"count",
+			"sets",
+			"process",
+			"SESS_TYPE",
+			"log",
+			"WiFree::LightCMS::Web::Voucher",
+			"},\n",
+			"DoVoucher",
+			"Voucher",
+			"$self->{db}",
+			"$self->{log}",
+			"$self->{config}",
+			"\\{'(\\w+)'\\}",
+			"err_desc",
+			"sub_action",
+			"DoVoucherValidateAPI",
+			"DoVoucherAPI",
+			"DoValidate",
+			"DoSignup",
+			"ShowPanel",
+			"ThankYou",
+			"ShowSignup",
+			"VerifyEmail",
+			"action(\\w+)",
+			"action\\w+",
+			"if $action eq \"",
+			"$query",
+			"\"",
+			"{status}",
+			"{action}",
+			"action",
+			"log",
+			"html::",
+			"{config}",
+			"{db}",
+			"{log}",
+			"retval->\\{(\\w+)\\}",
+			"$data",
+			"substrC",
+			"unpack\\((\\w)",
+			"'(\\w+)'",
+			"$buf",
+			"db",
+			"update",
+			"print",
+			"LIST_REVISION",
+			"LIST_UTIL",
+			"LIST_FILE",
+			"unsub",
+			"download",
+			"Download",
+			"Donwload",
+			"urlSoftwareUpdate",
+			"status",
+			"release-notes",
+			"\\s+\\w\\w => 'GB',",
+			"Press",
+			"EMAIL_SE",
+			"actionSubscription",
+			"EMAIL_SE",
+			"subscribe",
+			"actionSub",
+			"md5_",
+			"isSub",
+			"templates_dir",
+			"Press",
+			"get_template_f",
+			"_get_",
+			"tmpl_p",
+			"sendmail",
+			"image_",
+			"include",
+			"update",
+			"my \\$sub_action\\s=\\s.+",
+			"\\$sub_action",
+			"my \\$sub_action\\s=\\s.+",
+			"sub_ac",
+			"sub_action",
+			"inc",
+			"\\[/TMPL_IF\\]",
+			"[/TMPL_IF]",
+			"\\[TMPL_ELSE\\]",
+			"\\[TMPL_IF NAME=(\\w+)\\]",
+			"cach",
+			"cac",
+			"cach",
+			"news",
+			"livec",
+			"prox",
+			"LIVECHAT_O",
+			"conf",
+			"db",
+			"livecha",
+			"base",
+			"'(\\w\\w)' =>",
+			"'",
+			"\"",
+			"DEFAULT_P",
+			"url",
+			"actionph",
+			"abs",
+			"croak",
+			"debug",
+			" '",
+			"abs_dir",
+			"my",
+			"enable_debug",
+			"Config",
+			"log"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"$self->request",
+			"download",
+			"captcha",
+			"do_voucher",
+			"voucher",
+			"$self->db",
+			"$self->log",
+			"$self->conf",
+			"{$1}",
+			"do_voucher_validate_api",
+			"do_voucher_api",
+			"validate",
+			"signup",
+			"panel",
+			"thankyou",
+			"signup",
+			"verify_email",
+			"$1",
+			"when '",
+			"when",
+			"$self->query",
+			"'",
+			"conf",
+			"db",
+			"log",
+			"self->$1(",
+			"$self->_data",
+			"_substr_c",
+			"unpack('$1'",
+			"$1",
+			"$data",
+			"list_revision",
+			"list_util",
+			"list_file",
+			"",
+			"$self->sub_action",
+			"",
+			"<% end %>",
+			"<% else %>",
+			"<% if $1 %>",
+			"$1 =>",
+			"",
+			"'",
+			"conf->debug",
+			"$self->conf",
+			"$self->db",
+			"html.tt",
+			"self->users->",
+			"conf",
+			"$self->user",
+			"{$1}",
+			"$self->config",
+			"$self->db",
+			"$self->session->username",
+			"$self->session",
+			"$self->query",
+			"$self->get_template_file('$1')",
+			"'",
+			"$ticket",
+			";",
+			"false",
+			"",
+			"[$1]",
+			"",
+			" =",
+			"",
+			"{",
+			"}",
+			"{",
+			"<% conf.is_production %>",
+			"<% conf.domain %>",
+			";",
+			"$self->conf",
+			"$self->db",
+			"features/#",
+			"base_url.host",
+			"use WiFree::LightCMS::Web::$1;",
+			"use WiFree::LightCMS::Web::Session;",
+			"use WiFree::LightCMS::Web::Ticket;",
+			"package WiFree::LightCMS::Web::$1;",
+			"package WiFree::LightCMS::Web::Trans::$1;",
+			"use WiFree::LightCMS::Web::$1;",
+			"WiFree::LightCMS::Schema",
+			"use WiFree::LightCMS::Web::$1;",
+			"use WiFree::LightCMS::$1;",
+			"use WiFree::LightCMS::Web::$1;",
+			"WiFree::LightCMS::Web::Handlers::",
+			"use WiFree::LightCMS::$1;",
+			"use WiFree::LightCMS::Database;\n",
+			"",
+			"\n",
+			"WiFree::LightCMS::Std::\n",
+			"use WiFree::LightCMS::Std;\n",
+			"use WiFree::LightCMS::Database;\n",
+			"package WiFree::LightCMS::Web::$1;\n",
+			";\n",
+			"$self->contacts_tmpl",
+			"$self->db",
+			"$self->conf",
+			"$self->db",
+			"$self->conf",
+			"Test::Package",
+			"",
+			" ",
+			"",
+			"tmpl_add_function",
+			"",
+			"tmpl_add_function",
+			"_tt",
+			"",
+			"_tt",
+			"$self->tmpl_process",
+			"$self->tmpl_compile",
+			"download_tmpl",
+			"$self->tmpl->compile",
+			"$self->tmpl->process",
+			"$self->tmpl_process",
+			"$self->tmpl_compile",
+			"$self->tmpl->compile",
+			"$self->tmpl->process",
+			"$self->template->process",
+			"$self->template->compile",
+			"{{$self->holder}}",
+			"_abs_file",
+			"_abs_dir",
+			"",
+			"=",
+			"noxml"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"folders":
+	[
+		{
+			"follow_symlinks": true,
+			"path": "/home/ioan/Dropbox/Projects/Dist-Zilla-Plugin/Dist-Zilla-Plugin-ChangelogFromGit-CPAN-Changes"
+		}
+	],
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "lib/Dist/Zilla/Plugin/ChangelogFromGit/CPAN/Changes.pm",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 11213,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								325,
+								325
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME",
+								"XXX"
+							],
+							"codeintel": true,
+							"codeintel_config":
+							{
+								"JavaScript":
+								{
+									"codeintel_max_recursive_dir_depth": 2,
+									"codeintel_scan_files_in_project": false,
+									"javascriptExtraPaths":
+									[
+									]
+								},
+								"PHP":
+								{
+									"codeintel_max_recursive_dir_depth": 5,
+									"codeintel_scan_files_in_project": false,
+									"phpExtraPaths":
+									[
+									]
+								},
+								"Python":
+								{
+									"env":
+									{
+									}
+								}
+							},
+							"codeintel_enabled_languages":
+							[
+								"JavaScript",
+								"SCSS",
+								"HTML",
+								"Sass",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"TemplateToolkit"
+							],
+							"codeintel_live": true,
+							"codeintel_live_enabled_languages":
+							[
+								"JavaScript",
+								"SCSS",
+								"HTML",
+								"Sass",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"TemplateToolkit"
+							],
+							"codeintel_max_recursive_dir_depth": 10,
+							"codeintel_scan_exclude_dir":
+							{
+								"JavaScript":
+								[
+									"/build/",
+									"/min/"
+								]
+							},
+							"codeintel_scan_files_in_project": true,
+							"codeintel_selected_catalogs":
+							[
+								"HTML5",
+								"jQuery"
+							],
+							"codeintel_snippets": true,
+							"codeintel_syntax_map":
+							{
+								"Python Django": "Python"
+							},
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"bitwise": true,
+								"browser": true,
+								"camelcase": true,
+								"curly": true,
+								"eqeqeq": true,
+								"es3": true,
+								"globalstrict": true,
+								"indent": 4,
+								"latedef": true,
+								"quotmark": "single",
+								"strict": true,
+								"trailing": true,
+								"undef": true,
+								"unused": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublime_auto_complete": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2,
+							"sublimelinter_disable":
+							[
+								"haskell",
+								"java",
+								"lua",
+								"php",
+								"python",
+								"Ruby",
+								"ruby-lint",
+								"pylint",
+								"xml",
+								"coffeescript",
+								"rubyhaml"
+							],
+							"sublimelinter_executable_map":
+							{
+								"perl": "/home/ioan/perl5/perlbrew/bin/perl"
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "hard",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": true,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": true,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/Perl/Perl.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 378.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "git_log.pl",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2059,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								651,
+								651
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME",
+								"XXX"
+							],
+							"auto_name": "#!/usr/bin/env perl",
+							"codeintel": true,
+							"codeintel_config":
+							{
+								"JavaScript":
+								{
+									"codeintel_max_recursive_dir_depth": 2,
+									"codeintel_scan_files_in_project": false,
+									"javascriptExtraPaths":
+									[
+									]
+								},
+								"PHP":
+								{
+									"codeintel_max_recursive_dir_depth": 5,
+									"codeintel_scan_files_in_project": false,
+									"phpExtraPaths":
+									[
+									]
+								},
+								"Python":
+								{
+									"env":
+									{
+									}
+								}
+							},
+							"codeintel_enabled_languages":
+							[
+								"JavaScript",
+								"SCSS",
+								"HTML",
+								"Sass",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"TemplateToolkit"
+							],
+							"codeintel_live": true,
+							"codeintel_live_enabled_languages":
+							[
+								"JavaScript",
+								"SCSS",
+								"HTML",
+								"Sass",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"TemplateToolkit"
+							],
+							"codeintel_max_recursive_dir_depth": 10,
+							"codeintel_scan_exclude_dir":
+							{
+								"JavaScript":
+								[
+									"/build/",
+									"/min/"
+								]
+							},
+							"codeintel_scan_files_in_project": true,
+							"codeintel_selected_catalogs":
+							[
+								"HTML5",
+								"jQuery"
+							],
+							"codeintel_snippets": true,
+							"codeintel_syntax_map":
+							{
+								"Python Django": "Python"
+							},
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"bitwise": true,
+								"browser": true,
+								"camelcase": true,
+								"curly": true,
+								"eqeqeq": true,
+								"es3": true,
+								"globalstrict": true,
+								"indent": 4,
+								"latedef": true,
+								"quotmark": "single",
+								"strict": true,
+								"trailing": true,
+								"undef": true,
+								"unused": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublime_auto_complete": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2,
+							"sublimelinter_disable":
+							[
+								"haskell",
+								"java",
+								"lua",
+								"php",
+								"python",
+								"Ruby",
+								"ruby-lint",
+								"pylint",
+								"xml",
+								"coffeescript",
+								"rubyhaml"
+							],
+							"sublimelinter_executable_map":
+							{
+								"perl": "/home/ioan/perl5/perlbrew/bin/perl"
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "hard",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": true,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": true,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/Perl/Perl.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/home/ioan/perl5/perlbrew/perls/perl-5.18.1/lib/site_perl/5.18.1/Dist/Zilla/Plugin/ChangelogFromGit.pm",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 24194,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								533,
+								533
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME",
+								"XXX"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"bitwise": true,
+								"browser": true,
+								"camelcase": true,
+								"curly": true,
+								"eqeqeq": true,
+								"es3": true,
+								"globalstrict": true,
+								"indent": 4,
+								"latedef": true,
+								"quotmark": "single",
+								"strict": true,
+								"trailing": true,
+								"undef": true,
+								"unused": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2,
+							"sublimelinter_disable":
+							[
+								"haskell",
+								"java",
+								"lua",
+								"php",
+								"python",
+								"Ruby",
+								"ruby-lint",
+								"pylint",
+								"xml",
+								"coffeescript",
+								"rubyhaml"
+							],
+							"sublimelinter_executable_map":
+							{
+								"perl": "/home/ioan/perl5/perlbrew/bin/perl"
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "hard",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": true,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": true,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/Perl/Perl.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 9513.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "dist.ini",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1093,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								600,
+								600
+							]
+						],
+						"settings":
+						{
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME",
+								"XXX"
+							],
+							"codeintel": true,
+							"codeintel_config":
+							{
+								"JavaScript":
+								{
+									"codeintel_max_recursive_dir_depth": 2,
+									"codeintel_scan_files_in_project": false,
+									"javascriptExtraPaths":
+									[
+									]
+								},
+								"PHP":
+								{
+									"codeintel_max_recursive_dir_depth": 5,
+									"codeintel_scan_files_in_project": false,
+									"phpExtraPaths":
+									[
+									]
+								},
+								"Python":
+								{
+									"env":
+									{
+									}
+								}
+							},
+							"codeintel_enabled_languages":
+							[
+								"JavaScript",
+								"SCSS",
+								"HTML",
+								"Sass",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"TemplateToolkit"
+							],
+							"codeintel_live": true,
+							"codeintel_live_enabled_languages":
+							[
+								"JavaScript",
+								"SCSS",
+								"HTML",
+								"Sass",
+								"HTML5",
+								"Perl",
+								"CSS",
+								"TemplateToolkit"
+							],
+							"codeintel_max_recursive_dir_depth": 10,
+							"codeintel_scan_exclude_dir":
+							{
+								"JavaScript":
+								[
+									"/build/",
+									"/min/"
+								]
+							},
+							"codeintel_scan_files_in_project": true,
+							"codeintel_selected_catalogs":
+							[
+								"HTML5",
+								"jQuery"
+							],
+							"codeintel_snippets": true,
+							"codeintel_syntax_map":
+							{
+								"Python Django": "Python"
+							},
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110
+							],
+							"gjslint_options":
+							[
+							],
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"bitwise": true,
+								"browser": true,
+								"camelcase": true,
+								"curly": true,
+								"eqeqeq": true,
+								"es3": true,
+								"globalstrict": true,
+								"indent": 4,
+								"latedef": true,
+								"quotmark": "single",
+								"strict": true,
+								"trailing": true,
+								"undef": true,
+								"unused": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"sublime_auto_complete": true,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2,
+							"sublimelinter_disable":
+							[
+								"haskell",
+								"java",
+								"lua",
+								"php",
+								"python",
+								"Ruby",
+								"ruby-lint",
+								"pylint",
+								"xml",
+								"coffeescript",
+								"rubyhaml"
+							],
+							"sublimelinter_executable_map":
+							{
+								"perl": "/home/ioan/perl5/perlbrew/bin/perl"
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "hard",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": true,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": true,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"syntax": "Packages/INI/INI.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 378.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 31.0
+	},
+	"input":
+	{
+		"height": 37.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"project": "",
+	"replace":
+	{
+		"height": 68.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 212.0,
+		"selected_items":
+		[
+			[
+				"signu",
+				"actionShowSignup"
+			]
+		],
+		"width": 512.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 241.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

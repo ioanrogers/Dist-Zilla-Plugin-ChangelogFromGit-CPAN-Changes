@@ -1,0 +1,88 @@
+Changelog for Dist-Zilla-Plugin-ChangelogFromGit-CPAN-Changes
+
+v0.0.5 2013-11-30T05:51:20
+ - Merge branch 'master' of
+   github.com:ioanrogers/Dist-Zilla-Plugin-ChangelogFromGit-CPAN-Changes
+   [Ioan Rogers]
+ - Merge pull request #9 from chorny/master
+   
+   prevent hanging on Windows [Ioan Rogers]
+ - prevent hanging on Windows [Alexandr Ciornii]
+ - Remove cruft [Ioan Rogers]
+ - [Feature] Create CPAN::Changes compliant version numbers from
+   non-compliant
+   git tags. Closes #6
+   
+   Squashed commit of the following:
+   commit 1ebd18fd59033d5d8e56ca3f1eac2852c0227bd0
+   Author: Ioan Rogers <ioanr@cpan.org>
+   Date:   Thu Sep 19 14:09:41 2013 -0700
+   
+       [Closes #6] Renamed var, improved docs, added some error handling
+   
+   commit 1084f98fc2bf1390e18605b2b6bca32b03c37148
+   Author: Shantanu <shantanu@cpan.org>
+   Date:   Thu Sep 12 13:00:17 2013 +0700
+   
+       Not everyone uses CPAN::Changes::Spec compliant tags in git. So I
+   have
+       enabled users to choose weather to parse the version numbers from
+   tag if
+       their tag is not specc compliant
+   
+   Signed-off-by: Ioan Rogers <ioanr@cpan.org> [Shantanu Bhadoria]
+
+v0.0.4 2013-09-06T08:39:23
+ - Release 0.0.4 [Ioan Rogers]
+ - * Make sure README is checked in
+   * Use multiple_inheritance for Git::CommitBuild, otherwise the release
+   history
+     gets confused, giving the latest changelog entry the complete history
+   (like now!) [Ioan Rogers]
+ - Add an option to omit authors
+   
+   Useful for instance if there is only one author anyway. [Jakob Voss]
+ - [Closes #1] Get HEAD version from Git::Tag if available. Thanks to
+   @jddurand for reporting [Ioan Rogers]
+ - Don't run Test::Synopsis, the synopsis is an .ini file [Ioan Rogers]
+ - Default to omitting author email. Don't group by author, instead add
+   name to end of message. [Ioan Rogers]
+ - Tags are now build-ready without Dist::Zilla [Ioan Rogers]
+ - Require latest version of dzp::changelogfromgit to stop cpantester dep
+   failures [Ioan Rogers]
+ - Placeholder Changes to shut up dzp::git::commit [Ioan Rogers]
+ - Revert dist.ini [Ioan Rogers]
+ - Not being autocommitted [Ioan Rogers]
+ - Testing github::update [Ioan Rogers]
+ - Initial ReadmeMarkdownFromPod file [Ioan Rogers]
+ - dzp::git doesn't use nextversion [Ioan Rogers]
+ - Using all dzp::git [Ioan Rogers]
+ - Allow dirty readme [Ioan Rogers]
+ - Allow dirty readme [Ioan Rogers]
+ - Commit any changes [Ioan Rogers]
+ - Ignore readme [Ioan Rogers]
+ - tidied, check email isn't in the author_name [Ioan Rogers]
+ - Initial commit [Ioan Rogers]
+
+v0.0.3 2013-06-05T23:38:56
+ - Release 0.0.3 [Ioan Rogers]
+
+v0.0.2 2012-04-25T21:48:54
+ - Require latest version of dzp::changelogfromgit to stop cpantester dep
+   failures [Ioan Rogers]
+ - Placeholder Changes to shut up dzp::git::commit [Ioan Rogers]
+ - Revert dist.ini [Ioan Rogers]
+ - Not being autocommitted [Ioan Rogers]
+ - Testing github::update [Ioan Rogers]
+
+v0.0.1 2012-01-12T14:07:56
+ - Initial ReadmeMarkdownFromPod file [Ioan Rogers]
+ - dzp::git doesn't use nextversion [Ioan Rogers]
+ - Using all dzp::git [Ioan Rogers]
+ - Allow dirty readme [Ioan Rogers]
+ - Allow dirty readme [Ioan Rogers]
+ - Commit any changes [Ioan Rogers]
+ - Ignore readme [Ioan Rogers]
+ - tidied, check email isn't in the author_name [Ioan Rogers]
+ - Initial commit [Ioan Rogers]
+
