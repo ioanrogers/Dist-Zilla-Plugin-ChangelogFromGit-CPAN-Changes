@@ -4,14 +4,16 @@ Dist::Zilla::Plugin::ChangelogFromGit::CPAN::Changes - Format Changelogs using C
 
 # VERSION
 
-version 0.0.4
+version 0.0.5
 
 # SYNOPSIS
 
     [ChangelogFromGit::CPAN::Changes]
     ; All options from [ChangelogFromGit] plus
-    group_by_author = 1 ; default 0
-    show_author_email = 1 ; default 0
+    group_by_author       = 1 ; default 0
+    show_author_email     = 1 ; default 0
+    show_author           = 0 ; default 1
+    transform_version_tag = 1 ; default 0
 
 # ATTRIBUTES
 
@@ -31,9 +33,16 @@ want to show it \[ Anne Author <anne@author.com> \]
 Whether to show authors at all. Enabled by default. Turning this off also
 turns off grouping by author and author emails.
 
+## transform\_version\_tag
+
+Transform a git version tag to one compliant with [CPAN::Changes::Spec](https://metacpan.org/pod/CPAN::Changes::Spec) using
+`tag_regexp`. Use this if your git tag doesn't follow the standard.
+
+Defaults to off.
+
 # SEE ALSO
 
-[Dist::Zilla::Plugin::ChangelogFromGit::Debian](http://search.cpan.org/perldoc?Dist::Zilla::Plugin::ChangelogFromGit::Debian) which was used as a template for this
+[Dist::Zilla::Plugin::ChangelogFromGit::Debian](https://metacpan.org/pod/Dist::Zilla::Plugin::ChangelogFromGit::Debian) which was used as a template for this
 
 # BUGS AND LIMITATIONS
 
