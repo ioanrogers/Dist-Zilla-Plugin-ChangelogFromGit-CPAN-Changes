@@ -155,7 +155,9 @@ sub _get_tags {
     my $last_tag;
     my @tags;
     foreach my $tag ($self->_git->RUN('tag')) {
-        my $release = $self->_changes->release($tag);
+        $tag =~ $self->tag_regexp;
+        my $rel_tag = $1;
+        my $release = $self->_changes->release($rel_tag);
         if ($release) {
             $last_tag = $tag;
             next;
