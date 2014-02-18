@@ -1,0 +1,17 @@
+Changelog for Dist-Zilla-Plugin-ChangelogFromGit-CPAN-Changes
+
+0.0.6 2014-02-18T08:47:04Z
+ - [#2] No longer subclass DZP::ChangelogFromGit [Ioan Rogers]
+
+0.0.5 2013-11-30T05:51:37Z
+ - prevent hanging on Windows [Alexandr Ciornii]
+ - [Feature] Create CPAN::Changes compliant version numbers from
+   non-compliant git tags. Closes #6 [Shantanu Bhadoria]
+
+0.0.4 2013-09-06T08:39:23Z
+ - Add an option to omit authors [Jakob Voss]
+ - [Closes #1] Get HEAD version from Git::Tag if available. Thanks to
+   @jddurand for reporting [Ioan Rogers]
+ - Default to omitting author email. Don't group by author, instead add
+   name to end of message. [Ioan Rogers]
+
