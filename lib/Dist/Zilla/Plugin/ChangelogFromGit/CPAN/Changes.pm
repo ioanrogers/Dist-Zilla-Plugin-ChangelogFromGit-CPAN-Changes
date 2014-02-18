@@ -139,7 +139,7 @@ sub gather_files {
     $self->_get_tags;
     $self->_get_changes;
 
-    my $content = return $self->_changes->serialize;
+    my $content = $self->_changes->serialize;
 
     my $file = Dist::Zilla::File::InMemory->new({
         content => $content,
