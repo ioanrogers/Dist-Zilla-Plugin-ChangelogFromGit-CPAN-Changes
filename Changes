@@ -1,7 +1,9 @@
 Changelog for Dist-Zilla-Plugin-ChangelogFromGit-CPAN-Changes
 
-0.0.6 2014-02-18T08:47:04Z
- - [#2] No longer subclass DZP::ChangelogFromGit [Ioan Rogers]
+0.0.6 2014-02-20T02:49:23Z
+ - Allow manually editing changelog before release. Closes #4. [Ioan
+   Rogers]
+ - No longer subclass DZP::ChangelogFromGit. Closes #2. [Ioan Rogers]
 
 0.0.5 2013-11-30T05:51:37Z
  - prevent hanging on Windows [Alexandr Ciornii]
