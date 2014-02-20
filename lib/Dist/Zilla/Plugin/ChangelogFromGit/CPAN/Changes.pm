@@ -1,5 +1,5 @@
 package Dist::Zilla::Plugin::ChangelogFromGit::CPAN::Changes;
-
+$Dist::Zilla::Plugin::ChangelogFromGit::CPAN::Changes::VERSION = '0.0.6';
 # ABSTRACT: Generate valid CPAN::Changes Changelogs from git
 
 use v5.10.2;
@@ -21,49 +21,15 @@ subtype 'CoercedRegexpRef' => as 'RegexpRef';
 
 coerce 'CoercedRegexpRef' => from 'Str' => via {qr/$_[0]/};
 
-=attr group_by_author
-
-Whether to group commit messages by their author. This is the only way previous
-versions did it. Defaults to no, and [ Anne Author ] is appended to the commit
-message.
-
-Defaults to off.
-
-=cut
 
 has group_by_author => ( is => 'ro', isa => 'Bool', default => 0);
 
-=attr show_author_email
-
-Author email is probably just noise for most people, but turn this on if you
-want to show it [ Anne Author <anne@author.com> ]
-
-Defaults to off.
-
-=cut
 
 has show_author_email => ( is => 'ro', isa => 'Bool', default => 0);
 
-=attr show_author
-
-Whether to show authors at all. Turning this off also
-turns off grouping by author and author emails.
-
-Defaults to on.
-
-=cut
 
 has show_author => ( is => 'ro', isa => 'Bool', default => 1);
 
-=attr C<tag_regexp>
-
-A regexp string which will be used to match git tags to find releases. If your
-release tags are not compliant with L<CPAN::Changes::Spec>, you can use a
-capture group. It will be used as the version in place of the full tag name.
-
-Defaults to '^\d+\.\d+$'
-
-=cut
 
 has tag_regexp => (
     is      => 'ro',
@@ -72,23 +38,9 @@ has tag_regexp => (
     default => sub {'qr/^(\d+\.\d+)$/'},
 );
 
-=attr C<file_name>
-
-The name of the changelog file.
-
-Defaults to 'Changes'.
-
-=cut
 
 has file_name => (is => 'ro', isa => 'Str', default => 'Changes');
 
-=attr C<preamble>
-
-Block of text at the beginning of the changelog.
-
-Defaults to 'Changelog for $dist_name'
-
-=cut
 
 has preamble => (
     is      => 'ro',
@@ -97,25 +49,9 @@ has preamble => (
     default => sub { 'Changelog for ' . $_[0]->zilla->name },
 );
 
-=attr C<copy_to_root>
-
-When true, the generated changelog will be copied into the root folder where it
-can be committed (possiby automatically by L<Dist::Zilla::Plugin::Git::Commit>)
-
-Defaults to true.
-
-=cut
 
 has copy_to_root => (is => 'ro', isa => 'Bool', default => 1);
 
-=attr C<edit_changelog>
-
-When true, the generated changelog will be opened in an editor to allow manual
-editing.
-
-Defaults to false.
-
-=cut
 
 has edit_changelog => (is => 'ro', isa => 'Bool', default => 0);
 
@@ -375,6 +311,18 @@ __PACKAGE__->meta->make_immutable;
 
 1;
 
+__END__
+
+=pod
+
+=head1 NAME
+
+Dist::Zilla::Plugin::ChangelogFromGit::CPAN::Changes - Generate valid CPAN::Changes Changelogs from git
+
+=head1 VERSION
+
+version 0.0.6
+
 =head1 SYNOPSIS
 
  [ChangelogFromGit::CPAN::Changes]
@@ -384,3 +332,83 @@ __PACKAGE__->meta->make_immutable;
  show_author           = 0 ; default 1
  edit_changelog        = 1 ; default 0
 
+=head1 ATTRIBUTES
+
+=head2 group_by_author
+
+Whether to group commit messages by their author. This is the only way previous
+versions did it. Defaults to no, and [ Anne Author ] is appended to the commit
+message.
+
+Defaults to off.
+
+=head2 show_author_email
+
+Author email is probably just noise for most people, but turn this on if you
+want to show it [ Anne Author <anne@author.com> ]
+
+Defaults to off.
+
+=head2 show_author
+
+Whether to show authors at all. Turning this off also
+turns off grouping by author and author emails.
+
+Defaults to on.
+
+=head2 C<tag_regexp>
+
+A regexp string which will be used to match git tags to find releases. If your
+release tags are not compliant with L<CPAN::Changes::Spec>, you can use a
+capture group. It will be used as the version in place of the full tag name.
+
+Defaults to '^\d+\.\d+$'
+
+=head2 C<file_name>
+
+The name of the changelog file.
+
+Defaults to 'Changes'.
+
+=head2 C<preamble>
+
+Block of text at the beginning of the changelog.
+
+Defaults to 'Changelog for $dist_name'
+
+=head2 C<copy_to_root>
+
+When true, the generated changelog will be copied into the root folder where it
+can be committed (possiby automatically by L<Dist::Zilla::Plugin::Git::Commit>)
+
+Defaults to true.
+
+=head2 C<edit_changelog>
+
+When true, the generated changelog will be opened in an editor to allow manual
+editing.
+
+Defaults to false.
+
+=head1 BUGS AND LIMITATIONS
+
+You can make new bug reports, and view existing ones, through the
+web interface at L<https://github.com/ioanrogers/Dist-Zilla-Plugin-ChangelogFromGit-CPAN-Changes/issues>.
+
+=head1 SOURCE
+
+The development version is on github at L<http://github.com/ioanrogers/Dist-Zilla-Plugin-ChangelogFromGit-CPAN-Changes>
+and may be cloned from L<git://github.com/ioanrogers/Dist-Zilla-Plugin-ChangelogFromGit-CPAN-Changes.git>
+
+=head1 AUTHOR
+
+Ioan Rogers <ioanr@cpan.org>
+
+=head1 COPYRIGHT AND LICENSE
+
+This software is copyright (c) 2014 by Ioan Rogers.
+
+This is free software; you can redistribute it and/or modify it under
+the same terms as the Perl 5 programming language system itself.
+
+=cut
