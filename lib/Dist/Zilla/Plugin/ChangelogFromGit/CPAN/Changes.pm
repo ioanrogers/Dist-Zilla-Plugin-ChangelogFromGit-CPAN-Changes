@@ -5,12 +5,17 @@ package Dist::Zilla::Plugin::ChangelogFromGit::CPAN::Changes;
 use v5.10.2;
 use Moose;
 use Moose::Util::TypeConstraints;
+use Class::Load 'try_load_class';
 use CPAN::Changes::Release;
 use CPAN::Changes;
 use DateTime;
 use Git::Wrapper;
 
-with qw/Dist::Zilla::Role::FileGatherer Dist::Zilla::Role::Git::Repo/;
+with qw/
+  Dist::Zilla::Role::AfterBuild
+  Dist::Zilla::Role::FileGatherer
+  Dist::Zilla::Role::Git::Repo
+  /;
 
 subtype 'CoercedRegexpRef' => as 'RegexpRef';
 
@@ -92,6 +97,28 @@ has preamble => (
     default => sub { 'Changelog for ' . $_[0]->zilla->name },
 );
 
+=attr C<copy_to_root>
+
+When true, the generated changelog will be copied into the root folder where it
+can be committed (possiby automatically by L<Dist::Zilla::Plugin::Git::Commit>)
+
+Defaults to true.
+
+=cut
+
+has copy_to_root => (is => 'ro', isa => 'Bool', default => 1);
+
+=attr C<edit_changelog>
+
+When true, the generated changelog will be opened in an editor to allow manual
+editing.
+
+Defaults to false.
+
+=cut
+
+has edit_changelog => (is => 'ro', isa => 'Bool', default => 0);
+
 has _changes => (is => 'ro', lazy_build => 1, isa => 'CPAN::Changes');
 has _last_release => (is => 'rw', isa => 'Str');
 has _tags => (is => 'rw', isa => 'ArrayRef');
@@ -122,8 +149,10 @@ sub _build__changes {
     my @args = (preamble => $self->preamble);
 
     if (-f $self->file_name) {
+        $self->logger->log_debug('Starting from an existing changelog');
         $changes = CPAN::Changes->load($self->file_name, @args);
     } else {
+        $self->logger->log_debug('Creating full changelog');
 
         # TODO maybe. If Changelog is new and this is the first release,
         # first entry should just be "First release"
@@ -141,6 +170,19 @@ sub gather_files {
 
     my $content = $self->_changes->serialize;
 
+    # TODO don't bother prompting when only testing
+    if ($self->edit_changelog) {
+        if (try_load_class('Proc::InvokeEditor')) {
+            my $edited_content = Proc::InvokeEditor->edit($content);
+            my $new_changes    = CPAN::Changes->load_string($edited_content);
+            $content = $new_changes->serialize;
+        } else {
+            $self->logger->log_fatal(
+                'Proc::InvokeEditor needs to be installed for editing changelogs'
+            );
+        }
+    }
+
     my $file = Dist::Zilla::File::InMemory->new({
         content => $content,
         name    => $self->file_name,
@@ -149,11 +191,30 @@ sub gather_files {
     $self->add_file($file);
 }
 
+# Will copy the the changelog into the root folder if C<copy_to_root> is enabled.
+sub after_build {
+    my ($self, $args) = @_;
+
+    return unless $self->copy_to_root;
+
+    my $build_file = $args->{build_root}->file($self->file_name);
+
+    my $root_file = $self->zilla->root->file($self->file_name);
+    $self->log_debug("Copying changes file from $build_file to $root_file");
+    if (!-e $build_file) {
+        $self->logger->log_fatal("Where is the changelog?");
+    }
+    $build_file->copy_to($root_file);
+
+    return;
+}
+
 sub _get_tags {
     my $self = shift;
 
     my $last_tag;
     my @tags;
+    # TODO cope with missing releases
     foreach my $tag ($self->_git->RUN('tag')) {
         $tag =~ $self->tag_regexp;
         my $rel_tag = $1;
@@ -320,3 +381,5 @@ __PACKAGE__->meta->make_immutable;
  group_by_author       = 1 ; default 0
  show_author_email     = 1 ; default 0
  show_author           = 0 ; default 1
+ edit_changelog        = 1 ; default 0
+
