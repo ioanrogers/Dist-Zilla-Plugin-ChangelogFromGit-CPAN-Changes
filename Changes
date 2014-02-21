@@ -1,9 +1,13 @@
 Changelog for Dist-Zilla-Plugin-ChangelogFromGit-CPAN-Changes
 
+0.0.8 2014-02-21T05:50:05Z
+ - Fixed prereqs [Ioan Rogers]
+
 0.0.7 2014-02-21T05:41:38Z
  - Always ignore tags predating latest in changelog [Ioan Rogers]
  - When doing test runs there may be no commits so add a placeholder entry
-   [Ioan Rogers]
+
+ [Ioan Rogers]
 
 0.0.6 2014-02-20T02:49:23Z
  - Allow manually editing changelog before release. Closes #4. [Ioan
