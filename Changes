@@ -1,5 +1,8 @@
 Changelog for Dist-Zilla-Plugin-ChangelogFromGit-CPAN-Changes
 
+0.0.9 2014-02-21T09:40:43Z
+ - Fix calling each and values with a hashref on perls < 5.14 [Ioan Rogers]
+
 0.0.8 2014-02-21T05:50:05Z
  - Fixed prereqs [Ioan Rogers]
 
