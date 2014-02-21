@@ -17,9 +17,3 @@ Changelog for Dist-Zilla-Plugin-ChangelogFromGit-CPAN-Changes
  - Default to omitting author email. Don't group by author, instead add
    name to end of message. [Ioan Rogers]
 
-0.0.3 2013-08-06T08:39:23Z
-
-0.0.2 2013-07-06T08:39:23Z
-
-0.0.1 2013-06-06T08:39:23Z
-
