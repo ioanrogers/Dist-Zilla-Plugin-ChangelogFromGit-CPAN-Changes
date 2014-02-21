@@ -244,7 +244,7 @@ sub _git_log {
 
     # commit has to come first
     my $format_str = 'commit:%H%n';
-    while (my ($attr, $esc) = each $format) {
+    while (my ($attr, $esc) = each %$format) {
         $format_str .= "$attr:$esc%n";
     }
     $format_str .= '<END COMMIT>%n';
@@ -289,7 +289,7 @@ sub _git_log {
             }];
     }
 
-    return [sort { $b->{date} <=> $a->{date} } values $commits];
+    return [sort { $b->{date} <=> $a->{date} } values %$commits];
 }
 
 sub _get_release_date {
