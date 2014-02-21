@@ -273,6 +273,13 @@ sub _git_log {
         }
     }
 
+    if (!defined $commits) {
+        $self->logger->log_debug("No commits found for $revs");
+        return [{
+                subject => "No changes found"
+            }];
+    }
+
     return [sort { $b->{date} <=> $a->{date} } values $commits];
 }
 
