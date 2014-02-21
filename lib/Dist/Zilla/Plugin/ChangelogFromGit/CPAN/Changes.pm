@@ -130,18 +130,6 @@ has _git => (
     default => sub { Git::Wrapper->new('.') },
 );
 
-has _git_tag => (
-    is      => 'ro',
-    lazy    => 1,
-    isa     => 'Maybe[Dist::Zilla::Plugin::Git::Tag]',
-    default => sub {
-        foreach (@{shift->zilla->plugins}) {
-            return $_ if ref eq 'Dist::Zilla::Plugin::Git::Tag';
-        }
-        return;
-    },
-);
-
 sub _build__changes {
     my $self = shift;
 
