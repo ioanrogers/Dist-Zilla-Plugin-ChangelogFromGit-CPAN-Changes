@@ -120,8 +120,8 @@ Defaults to false.
 has edit_changelog => (is => 'ro', isa => 'Bool', default => 0);
 
 has _changes => (is => 'ro', lazy_build => 1, isa => 'CPAN::Changes');
-has _last_release => (is => 'rw', isa => 'Str');
-has _tags => (is => 'rw', isa => 'ArrayRef');
+has _last_release => (is => 'ro', lazy_build => 1, isa => 'Maybe[version]');
+has _tags => (is => 'rw', isa => 'ArrayRef', default => sub {[]});
 
 has _git => (
     is      => 'ro',
@@ -148,6 +148,29 @@ sub _build__changes {
     }
 
     return $changes;
+}
+
+sub _build__last_release {
+    my $self = shift;
+
+    my @releases = $self->_changes->releases;
+    if (scalar @releases > 0) {
+        my $last_release = version->parse($releases[-1]->version);
+        $self->logger->log("Last release in changelog: $last_release");
+
+        if (version->parse($self->zilla->version) == $last_release) {
+            $last_release = $releases[-2]->version;
+            $self->logger->log(
+                "Last release is *this* release, using $last_release as last");
+        }
+        $last_release =~ $self->tag_regexp;
+        if (!defined $1) {
+            $self->logger->log_croak(
+                "Last release $last_release does not match tag_regexp");
+        }
+        return version->parse($1);
+    }
+    return;
 }
 
 sub gather_files {
@@ -199,26 +222,12 @@ sub after_build {
 
 sub _get_tags {
     my $self = shift;
-
-    my $last_tag;
-    my @tags;
-
-    # TODO cope with missing releases
     foreach my $tag ($self->_git->RUN('tag')) {
-        $tag =~ $self->tag_regexp;
-        my $rel_tag = $1;
-        my $release = $self->_changes->release($rel_tag);
-        if ($release) {
-            $last_tag = $tag;
-            next;
-        }
-        push @tags, $tag;
+        next unless $tag =~ $self->tag_regexp;
+        push @{$self->_tags}, $tag;
     }
 
-    push @tags, 'HEAD';
-
-    $self->_tags(\@tags);
-    $self->_last_release($last_tag) if $last_tag;
+    push @{$self->_tags}, 'HEAD';
     return;
 }
 
@@ -302,23 +311,37 @@ sub _get_changes {
     my $self     = shift;
     my $last_tag = $self->_last_release;
 
-    # TODO sorting tags
     foreach my $tag (@{$self->_tags}) {
         my $rev = $last_tag ? "$last_tag..$tag" : $tag;
         $last_tag = $tag;
 
+        my $version;
+        if ($tag eq 'HEAD') {
+            $version = $self->zilla->version;
+        } else {
+            $tag =~ $self->tag_regexp;
+            if (!$1) {
+                die sprintf
+                  'Failed to get a match from tag_regexp: [%s] vs [%s]',
+                  $version, $self->tag_regexp;
+            }
+            $version = $1;
+        }
+
+        $self->logger->log_debug("Tag $tag == Version $version");
+        if ($self->_last_release) {
+            if ($self->_last_release > version->parse($version)) {
+                $self->logger->log_debug("Skipping previous release $version");
+                next;
+            } elsif ($self->_last_release == version->parse($version)) {
+                $self->logger->log_debug("Skipping release $version");
+                next;
+
+            }
+        }
+
         $self->logger->log_debug("Getting commits for $rev");
         my $commits = $self->_git_log($rev);
-
-        # get release version
-        my $version = $tag eq 'HEAD' ? $self->zilla->version : $tag;
-        $self->logger->log_debug("V=$version T=$tag");
-        $version =~ $self->tag_regexp;
-        if (!$1) {
-            die sprintf 'Failed to get a match from tag_regexp: [%s] vs [%s]',
-              $version, $self->tag_regexp;
-        }
-        $version = $1;
 
         my $release = CPAN::Changes::Release->new(
             version => $version,
