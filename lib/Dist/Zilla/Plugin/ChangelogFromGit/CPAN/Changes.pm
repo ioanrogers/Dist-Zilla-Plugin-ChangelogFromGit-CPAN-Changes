@@ -376,7 +376,7 @@ sub _get_changes {
                     $release->add_changes({group => $group},
                         $commit->{subject});
                 } else {
-                    $release->add_changes($commit->{subject} . " [$author]");
+                    $release->add_changes($commit->{subject} . " ($author)");
                 }
             } else {
                 $release->add_changes($commit->{subject});
