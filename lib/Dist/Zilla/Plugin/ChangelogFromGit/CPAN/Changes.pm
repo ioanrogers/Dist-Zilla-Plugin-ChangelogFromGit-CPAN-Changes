@@ -364,7 +364,7 @@ sub _get_changes {
             next if $commit->{subject} =~ /^Release /;
             next if $commit->{subject} =~ /^Merge (pull|branch)/;
 
-            if ($self->show_author) {
+            if ($self->show_author && exists $commit->{author}) {
                 my $author = $commit->{author};
 
                 if ($self->show_author_email) {
