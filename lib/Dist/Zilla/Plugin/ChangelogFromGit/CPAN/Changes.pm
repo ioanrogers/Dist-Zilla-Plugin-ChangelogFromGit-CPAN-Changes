@@ -174,7 +174,7 @@ sub _build__last_release {
         }
         $last_release =~ $self->tag_regexp;
         if (!defined $1) {
-            $self->logger->log_croak(
+            $self->logger->log_fatal(
                 "Last release $last_release does not match tag_regexp");
         }
         return version->parse($1);
