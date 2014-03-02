@@ -61,7 +61,10 @@ A regexp string which will be used to match git tags to find releases. If your
 release tags are not compliant with L<CPAN::Changes::Spec>, you can use a
 capture group. It will be used as the version in place of the full tag name.
 
-Defaults to '^\d+\.\d+$'
+Also takes C<semantic>, which becomes C<qr{^v?(\d+\.\d+\.\d+)$}>, and
+C<decimal>, which becomes C<qr{^v?(\d+\.\d+)$}>.
+
+Defaults to 'decimal'
 
 =cut
 
@@ -69,7 +72,7 @@ has tag_regexp => (
     is      => 'ro',
     isa     => 'CoercedRegexpRef',
     coerce  => 1,
-    default => sub {'qr/^(\d+\.\d+)$/'},
+    default => 'v?(\d+\.\d+)',
 );
 
 =attr C<file_name>
@@ -138,6 +141,21 @@ has _git_can_mailmap => (
         return version->parse($_[0]->_git->version) < '1.8.2' ? 0 : 1;
     },
 );
+
+sub BUILDARGS {
+    my $orig = shift;
+    my %args = %{$_[0]};
+
+    if (exists $args{tag_regexp}) {
+        if ($args{tag_regexp} eq 'semantic') {
+            $args{tag_regexp} = 'v?(\d+\.\d+\.\d+)';
+        } elsif ($args{tag_regexp} eq 'decimal') {
+            $args{tag_regexp} = 'v?(\d+\.\d+)$';
+        }
+    }
+
+    return \%args;
+}
 
 sub _build__changes {
     my $self = shift;
