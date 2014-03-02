@@ -1,5 +1,15 @@
 Changelog for Dist-Zilla-Plugin-ChangelogFromGit-CPAN-Changes
 
+0.0.11 2014-03-02T07:12:44Z
+ [Bugfixes]
+ - Fixed incorrect log method (Ioan Rogers)
+ - Don't try to 'use-mailmap' for git < 1.8.2. Closes #12 (Ioan Rogers)
+
+ [Other]
+ - Use my dzil plugin bundle (Ioan Rogers)
+ - Log the tag_regexp being used when debugging (Ioan Rogers)
+ - Added some tests, Closes #7 (Ioan Rogers)
+
 0.0.10 2014-02-23T00:57:09Z
  [Bugfixes]
  - square parens makes CPAN::Changes think author is group. Change to().
