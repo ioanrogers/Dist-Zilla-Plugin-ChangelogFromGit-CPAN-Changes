@@ -130,6 +130,15 @@ has _git => (
     default => sub { Git::Wrapper->new('.') },
 );
 
+has _git_can_mailmap => (
+    is      => 'ro',
+    lazy    => 1,
+    isa     => 'Bool',
+    default => sub {
+        return version->parse($_[0]->_git->version) < '1.8.2' ? 0 : 1;
+    },
+);
+
 sub _build__changes {
     my $self = shift;
 
@@ -249,12 +258,18 @@ sub _git_log {
     }
     $format_str .= '<END COMMIT>%n';
 
+    my $log_opts = {
+        no_color => 1,
+        format   => $format_str,
+    };
+
+    if ($self->_git_can_mailmap and $self->show_author) {
+        $self->logger->log_debug('Using git mailmap');
+        $log_opts->{'use-mailmap'} = 1;
+    }
+
     my @out = $self->_git->RUN(
-        log => {
-            no_color      => 1,
-            'use-mailmap' => 1,
-            format        => $format_str,
-        },
+        log => $log_opts,
         $revs
     );
 
