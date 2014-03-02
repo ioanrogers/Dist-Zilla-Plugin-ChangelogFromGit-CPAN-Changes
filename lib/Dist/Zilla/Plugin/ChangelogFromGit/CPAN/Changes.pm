@@ -231,6 +231,8 @@ sub after_build {
 
 sub _get_tags {
     my $self = shift;
+    $self->logger->log_debug(
+        'Searching for tags matching ' . $self->tag_regexp);
     foreach my $tag ($self->_git->RUN('tag')) {
         next unless $tag =~ $self->tag_regexp;
         push @{$self->_tags}, $tag;
