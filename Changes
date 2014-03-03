@@ -1,5 +1,13 @@
 Changelog for Dist-Zilla-Plugin-ChangelogFromGit-CPAN-Changes
 
+0.0.12 2014-03-03T12:26:15Z
+ [Bugfixes]
+ - Fixed prereqs
+
+ [Features]
+ - Allow 'semantic' or 'decimal' as args to tag_regexp. Closes #10 (Ioan
+   Rogers)
+
 0.0.11 2014-03-02T07:12:44Z
  [Bugfixes]
  - Fixed incorrect log method (Ioan Rogers)
