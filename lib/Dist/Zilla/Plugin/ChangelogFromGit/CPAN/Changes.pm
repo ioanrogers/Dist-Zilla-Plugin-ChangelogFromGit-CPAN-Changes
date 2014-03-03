@@ -143,8 +143,7 @@ has _git_can_mailmap => (
 );
 
 sub BUILDARGS {
-    my $orig = shift;
-    my %args = %{$_[0]};
+    my %args = %{$_[1]};
 
     if (exists $args{tag_regexp}) {
         if ($args{tag_regexp} eq 'semantic') {
