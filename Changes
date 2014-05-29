@@ -1,5 +1,13 @@
 Changelog for Dist-Zilla-Plugin-ChangelogFromGit-CPAN-Changes
 
+0.0.13 2014-05-29T03:43:56Z
+ [Bugfixes]
+ - require perl 5.10.1 rather than the non-existent 5.10.2 (Jakob Voss)
+
+ [Other]
+ - Disable Test::NoTabs until I can be bothered to work how to stop it
+   checking a .tar.gz (Ioan Rogers)
+
 0.0.12 2014-03-03T12:26:15Z
  [Bugfixes]
  - Fixed prereqs
