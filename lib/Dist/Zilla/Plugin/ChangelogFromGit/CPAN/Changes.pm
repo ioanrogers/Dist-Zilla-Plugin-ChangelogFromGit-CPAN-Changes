@@ -138,7 +138,10 @@ has _git_can_mailmap => (
     lazy    => 1,
     isa     => 'Bool',
     default => sub {
-        return version->parse($_[0]->_git->version) < '1.8.2' ? 0 : 1;
+        my ($gv) = $_[0]->git->version =~ /(\d+\.\d+\.\d+)/;
+        $gv //= 0;
+        say STDERR "# git version $gv";
+        return version->parse($gv) < '1.8.2' ? 0 : 1;
     },
 );
 
