@@ -1,5 +1,9 @@
 Changelog for Dist-Zilla-Plugin-ChangelogFromGit-CPAN-Changes
 
+0.0.14_01 2014-06-04T06:07:07Z
+ - [gh#14] Try to munge git version, leave debugging in to see what
+   CPANtesters finds (Ioan Rogers)
+
 0.0.13 2014-05-29T03:43:56Z
  [Bugfixes]
  - require perl 5.10.1 rather than the non-existent 5.10.2 (Jakob Voss)
