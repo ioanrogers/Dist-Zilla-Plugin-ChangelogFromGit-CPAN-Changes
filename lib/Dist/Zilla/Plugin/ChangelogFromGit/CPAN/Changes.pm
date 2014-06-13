@@ -9,6 +9,7 @@ use Class::Load 'try_load_class';
 use CPAN::Changes::Release;
 use CPAN::Changes;
 use DateTime;
+use Encode;
 use Git::Wrapper;
 
 with qw/
@@ -400,11 +401,19 @@ sub _get_changes {
             next if $commit->{subject} =~ /^Release /;
             next if $commit->{subject} =~ /^Merge (pull|branch)/;
 
+            unless (utf8::is_utf8($commit->{subject})) {
+                $commit->{subject} = Encode::decode_utf8($commit->{subject});
+            }
+
             if ($self->show_author && exists $commit->{author}) {
                 my $author = $commit->{author};
 
                 if ($self->show_author_email) {
                     $author .= ' ' . $commit->{email};
+                }
+
+                unless (utf8::is_utf8($author)) {
+                    $author = Encode::decode_utf8($author);
                 }
 
                 if ($self->group_by_author) {

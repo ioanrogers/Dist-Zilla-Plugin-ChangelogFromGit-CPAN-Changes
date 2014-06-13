@@ -48,9 +48,10 @@ sub test_changes {
     my $changes_file = $self->tzil->tempdir->file('build/Changes');
     changes_file_ok $changes_file;
 
-    my $expected_file    = Path::Class::File->new("t/changes/$expected_name");
-    my @expected_changes = $expected_file->slurp;
-    my @got_changes      = $changes_file->slurp;
+    my $expected_file = Path::Class::File->new("t/changes/$expected_name");
+    my @expected_changes =
+      $expected_file->slurp(iomode => '<:encoding(UTF-8)');
+    my @got_changes = $changes_file->slurp(iomode => '<:encoding(UTF-8)');
 
     # everything should match except the date
     foreach (my $i = 0 ; $i < scalar @expected_changes ; $i++) {
