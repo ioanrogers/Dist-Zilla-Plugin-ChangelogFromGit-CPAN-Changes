@@ -1,8 +1,15 @@
 Changelog for Dist-Zilla-Plugin-ChangelogFromGit-CPAN-Changes
+if author and subject are not tagged utf8, try decoding
 
 0.0.14_01 2014-06-04T06:07:07Z
  - [gh#14] Try to munge git version, leave debugging in to see what
    CPANtesters finds (Ioan Rogers)
+
+0.0.14 2014-06-04T06:07:07Z
+ [Bugfixes]
+ - gh#15. If author and subject are not tagged utf8, try decoding (Ioan
+   Rogers)
+ - gh#14. Remove debugging output for git version parsing (Ioan Rogers)
 
 0.0.13 2014-05-29T03:43:56Z
  [Bugfixes]
