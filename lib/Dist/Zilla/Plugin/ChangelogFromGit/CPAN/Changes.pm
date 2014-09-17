@@ -183,7 +183,7 @@ sub _build__last_release {
     my $self = shift;
 
     my @releases = $self->_changes->releases;
-    if (scalar @releases > 0) {
+    if (scalar @releases > 1) {
         my $last_release = version->parse($releases[-1]->version);
         $self->logger->log("Last release in changelog: $last_release");
 
