@@ -1,10 +1,10 @@
 Changelog for DZT-Sample
 
 1.001 2014-06-13T02:25:00
- - [FIX] Something fixed by someone else (ꀀꀁꀓꀛꀝꀍꀎꀏꀗꀙ <person@example.com>)
+  - [FIX] Something fixed by someone else (ꀀꀁꀓꀛꀝꀍꀎꀏꀗꀙ <person@example.com>)
 
 0.001 2014-03-02T04:07:30
- - [ENH] Added important warning (Ioan Rogers <ioanr@cpan.org>)
- - [FIX] Typo (Ioan Rogers <ioanr@cpan.org>)
- - Initial commit (Ioan Rogers <ioanr@cpan.org>)
+  - [ENH] Added important warning (Ioan Rogers <ioanr@cpan.org>)
+  - [FIX] Typo (Ioan Rogers <ioanr@cpan.org>)
+  - Initial commit (Ioan Rogers <ioanr@cpan.org>)
 

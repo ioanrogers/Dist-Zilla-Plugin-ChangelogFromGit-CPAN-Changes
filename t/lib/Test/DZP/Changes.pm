@@ -67,7 +67,7 @@ sub test_changes {
               qr/^\d+\.\d{3} \d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}Z?$/,
               'Matched line';
         } else {
-            is $expected_changes[$i], $got_changes[$i], 'Matched line';
+            is $got_changes[$i], $expected_changes[$i], 'Matched line';
         }
     }
 }
