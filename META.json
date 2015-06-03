@@ -1,0 +1,155 @@
+{
+   "abstract" : "Generate valid CPAN::Changes Changelogs from git",
+   "author" : [
+      "Ioan Rogers <ioanr@cpan.org>"
+   ],
+   "dynamic_config" : 0,
+   "generated_by" : "Dist::Zilla version 5.036, CPAN::Meta::Converter version 2.150001",
+   "license" : [
+      "perl_5"
+   ],
+   "meta-spec" : {
+      "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
+      "version" : "2"
+   },
+   "name" : "Dist-Zilla-Plugin-ChangelogFromGit-CPAN-Changes",
+   "prereqs" : {
+      "configure" : {
+         "requires" : {
+            "Module::Build::Tiny" : "0.039"
+         }
+      },
+      "develop" : {
+         "requires" : {
+            "Dist::Zilla::PluginBundle::Author::IOANR" : "0.004",
+            "Test::CPAN::Changes" : "0.19",
+            "Test::CPAN::Meta::JSON" : "0.16",
+            "Test::EOL" : "0",
+            "Test::More" : "0.88",
+            "Test::Pod" : "1.41",
+            "Test::Version" : "1"
+         }
+      },
+      "runtime" : {
+         "recommends" : {
+            "Proc::InvokeEditor" : "0"
+         },
+         "requires" : {
+            "CPAN::Changes" : "0.400001",
+            "CPAN::Changes::Release" : "0",
+            "Class::Load" : "0",
+            "DateTime" : "0",
+            "Dist::Zilla::Role::AfterBuild" : "0",
+            "Dist::Zilla::Role::FileGatherer" : "0",
+            "Dist::Zilla::Role::Git::Repo" : "0",
+            "Encode" : "0",
+            "Git::Wrapper" : "0",
+            "Moose" : "0",
+            "Moose::Util::TypeConstraints" : "0",
+            "Path::Class" : "0.35",
+            "perl" : "v5.10.1"
+         }
+      },
+      "test" : {
+         "recommends" : {
+            "CPAN::Meta" : "2.120900"
+         },
+         "requires" : {
+            "Archive::Tar" : "0",
+            "Dist::Zilla::File::InMemory" : "0",
+            "ExtUtils::MakeMaker" : "0",
+            "File::Spec" : "0",
+            "File::chdir" : "0",
+            "IO::Handle" : "0",
+            "IPC::Open3" : "0",
+            "Test::CPAN::Changes" : "0",
+            "Test::CheckDeps" : "0.010",
+            "Test::DZil" : "0",
+            "Test::More" : "0.94",
+            "Test::Roo" : "0",
+            "Test::Roo::Role" : "0",
+            "lib" : "0",
+            "strict" : "0",
+            "warnings" : "0"
+         }
+      }
+   },
+   "release_status" : "stable",
+   "resources" : {
+      "bugtracker" : {
+         "web" : "https://github.com/ioanrogers/Dist-Zilla-Plugin-ChangelogFromGit-CPAN-Changes/issues"
+      },
+      "homepage" : "http://metacpan.org/release/Dist-Zilla-Plugin-ChangelogFromGit-CPAN-Changes/",
+      "repository" : {
+         "type" : "git",
+         "url" : "git://github.com/ioanrogers/Dist-Zilla-Plugin-ChangelogFromGit-CPAN-Changes.git",
+         "web" : "https://github.com/ioanrogers/Dist-Zilla-Plugin-ChangelogFromGit-CPAN-Changes"
+      }
+   },
+   "version" : "0.106",
+   "x_BuiltWith" : {
+      "failures" : {
+         "CPAN::Changes::Release" : "Module::MetaData could not parse a version from /home/ioan/.plenv/versions/5.20.1/lib/perl5/site_perl/5.20.1/CPAN/Changes/Release.pm"
+      },
+      "modules" : {
+         "Archive::Tar" : "2.04",
+         "CPAN::Changes" : "0.400001",
+         "CPAN::Meta" : "2.150001",
+         "Class::Load" : "0.22",
+         "DateTime" : "1.19",
+         "Dist::Zilla::File::InMemory" : "5.036",
+         "Dist::Zilla::PluginBundle::Author::IOANR" : "0.004",
+         "Dist::Zilla::Role::AfterBuild" : "5.036",
+         "Dist::Zilla::Role::FileGatherer" : "5.036",
+         "Dist::Zilla::Role::Git::Repo" : "2.034",
+         "Encode" : "2.73",
+         "ExtUtils::MakeMaker" : "7.04",
+         "File::Spec" : "3.48",
+         "File::chdir" : "0.1010",
+         "Git::Wrapper" : "0.044",
+         "IO::Handle" : "1.35",
+         "IPC::Open3" : "1.16",
+         "Module::Build::Tiny" : "0.039",
+         "Moose" : "2.1404",
+         "Moose::Util::TypeConstraints" : "2.1404",
+         "Path::Class" : "0.35",
+         "Proc::InvokeEditor" : "1.07",
+         "Test::CPAN::Changes" : "0.400001",
+         "Test::CPAN::Meta::JSON" : "0.16",
+         "Test::CheckDeps" : "0.010",
+         "Test::DZil" : "5.036",
+         "Test::EOL" : "1.5",
+         "Test::More" : "1.001014",
+         "Test::Pod" : "1.50",
+         "Test::Roo" : "1.004",
+         "Test::Roo::Role" : "1.004",
+         "Test::Version" : "2.01",
+         "lib" : "0.63",
+         "strict" : "1.08",
+         "warnings" : "1.23"
+      },
+      "perl" : {
+         "original" : "v5.20.1",
+         "qv" : 1,
+         "version" : [
+            5,
+            20,
+            1
+         ]
+      },
+      "perl-config" : {
+         "gccversion" : "4.2.1 Compatible Clang 3.5.0 (tags/RELEASE_350/final)",
+         "myarchname" : "x86_64-linux",
+         "osname" : "linux"
+      },
+      "platform" : "linux"
+   },
+   "x_contributors" : [
+      "Alexandr Ciornii <alexchorny@gmail.com>",
+      "Doug Bell <preaction@cpan.org>",
+      "Jakob Voß <jacob.voss@gbv.de>",
+      "Shantanu Bhadoria <shantanu@cpan.org>",
+      "Tim Retout <diocles@cpan.org>",
+      "Tuomas Jormola <tj+cpan@solitudo.net>"
+   ]
+}
