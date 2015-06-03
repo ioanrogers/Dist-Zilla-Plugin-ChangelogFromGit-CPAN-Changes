@@ -7,7 +7,7 @@ use Moose;
 use Moose::Util::TypeConstraints;
 use Class::Load 'try_load_class';
 use CPAN::Changes::Release;
-use CPAN::Changes;
+use CPAN::Changes 0.400001;
 use DateTime;
 use Encode;
 use Git::Wrapper;
@@ -446,4 +446,3 @@ __PACKAGE__->meta->make_immutable;
  show_author_email     = 1 ; default 0
  show_author           = 0 ; default 1
  edit_changelog        = 1 ; default 0
-
