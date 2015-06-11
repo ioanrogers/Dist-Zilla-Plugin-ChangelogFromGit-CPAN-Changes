@@ -210,14 +210,15 @@ sub gather_files {
 
     my $content = $self->_changes->serialize;
 
-    # TODO don't bother prompting when only testing
-    if ($self->edit_changelog) {
+    $self->log('Editing changelogs is disabled') if $ENV{NO_EDIT_CHANGES};
+
+    if ($self->edit_changelog && !$ENV{NO_EDIT_CHANGES}) {
         if (try_load_class('Proc::InvokeEditor')) {
             my $edited_content = Proc::InvokeEditor->edit($content);
             my $new_changes    = CPAN::Changes->load_string($edited_content);
             $content = $new_changes->serialize;
         } else {
-            $self->logger->log_fatal(
+            $self->log(
                 'Proc::InvokeEditor needs to be installed for editing changelogs'
             );
         }
