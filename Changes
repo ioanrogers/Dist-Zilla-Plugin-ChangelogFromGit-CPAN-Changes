@@ -1,5 +1,10 @@
 Changelog for Dist-Zilla-Plugin-ChangelogFromGit-CPAN-Changes
 
+0.107 2015-06-11T03:01:07Z
+  - Missing Proc::InvokeEditor is now a nonfatal warning (Ioan Rogers)
+  - Setting NO_EDIT_CHANGES will override changelog editing override of
+    editing (Ioan Rogers)
+
 0.106 2015-06-03T03:57:14Z
   - There's no real point using semantic versioning for this module (Ioan
     Rogers)
