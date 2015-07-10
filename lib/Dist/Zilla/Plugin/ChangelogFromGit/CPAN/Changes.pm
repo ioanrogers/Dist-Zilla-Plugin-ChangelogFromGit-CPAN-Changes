@@ -7,7 +7,7 @@ use Moose;
 use Moose::Util::TypeConstraints;
 use Class::Load 'try_load_class';
 use CPAN::Changes::Release;
-use CPAN::Changes 0.400001;
+use CPAN::Changes 0.400002;
 use DateTime;
 use Encode;
 use Git::Wrapper;
