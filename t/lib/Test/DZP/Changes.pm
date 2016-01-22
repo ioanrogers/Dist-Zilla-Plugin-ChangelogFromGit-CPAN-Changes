@@ -64,7 +64,7 @@ sub test_changes {
     foreach (my $i = 0 ; $i < scalar @expected_changes ; $i++) {
         if ($expected_changes[$i] =~ /^\d+\.\d{3}/) {
             like $got_changes[$i],
-              qr/^\d+\.\d{3} \d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}Z?$/,
+              qr/^\d+\.\d{3}(_\d+)? \d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}Z?$/,
               'Matched line';
         } else {
             is $got_changes[$i], $expected_changes[$i], 'Matched line';
