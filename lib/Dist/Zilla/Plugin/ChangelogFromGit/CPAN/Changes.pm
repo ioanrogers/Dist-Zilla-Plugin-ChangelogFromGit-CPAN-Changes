@@ -73,7 +73,7 @@ has tag_regexp => (
     is      => 'ro',
     isa     => 'CoercedRegexpRef',
     coerce  => 1,
-    default => 'v?(\d+\.\d+)',
+    default => 'v?(\d+\.\d+(_\d+)?)'
 );
 
 =attr C<file_name>
