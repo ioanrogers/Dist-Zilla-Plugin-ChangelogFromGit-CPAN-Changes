@@ -1,12 +1,22 @@
 language: perl
 perl:
+  - "5.16"
   - "5.18"
   - "5.20"
   - "5.22"
+  - "5.24"
+  - "dev"
+  - "blead"
+env:
+  - AUTHOR_TESTING=0
 matrix:
   include:
-    - perl: 5.22
-    env: COVERAGE=1
+    - perl: 5.24
+      env: COVERAGE=1 AUTHOR_TESTING=0
+  allow_failures:
+    - perl: blead       # ignore failures for blead perl
+sudo: false             # faster builds as long as you don't need sudo access
 before_install:
-  - export NO_EDIT_CHANGES=1 AUTHOR_TESTING=0
+  - git config --global user.email "perl-helpers@travis-ci.com"
+  - git config --global user.name "Travis Perl Helpers"
   - eval $(curl https://travis-perl.github.io/init) --auto
