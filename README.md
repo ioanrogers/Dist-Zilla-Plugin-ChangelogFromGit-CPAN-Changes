@@ -5,7 +5,7 @@ message.
 Defaults to off.
 
 Author email is probably just noise for most people, but turn this on if you
-want to show it \[ Anne Author &lt;anne@author.com> \]
+want to show it \[ Anne Author <anne@author.com> \]
 
 Defaults to off.
 

@@ -1,5 +1,10 @@
 Changelog for Dist-Zilla-Plugin-ChangelogFromGit-CPAN-Changes
 
+0.110 2016-06-23T17:22:15Z
+ - Update travis config (Ioan Rogers)
+ - [Closes #24] dzil > 6 has replaced Path::Class with Path::Tiny (Ioan
+   Rogers)
+
 0.109 2016-01-25T06:12:12Z
  - [Closes #16] amend tag_regexp default to cater for dev tags (Lisa Hare)
  - Fixed README (Ioan Rogers)
@@ -19,12 +24,12 @@ Changelog for Dist-Zilla-Plugin-ChangelogFromGit-CPAN-Changes
    Rogers)
  - Fix tests for CPAN::Changes 0.400001 (Tim Retout)
 
-0.0.15 2015-01-18T06:02:39Z
- - explicitly define prereq on Path::Class (Doug Bell)
-
 0.0.14_01 2014-06-04T06:07:07Z
  - [gh#14] Try to munge git version, leave debugging in to see what
    CPANtesters finds (Ioan Rogers)
+
+0.0.15 2015-01-18T06:02:39Z
+ - explicitly define prereq on Path::Class (Doug Bell)
 
 0.0.14 2014-06-04T06:07:07Z
  [Bugfixes]
