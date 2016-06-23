@@ -6,6 +6,7 @@ use Test::CPAN::Changes;
 use Archive::Tar;
 use File::chdir;
 use Dist::Zilla::File::InMemory;
+use Path::Tiny;
 
 # requires 'test_repo_name';
 
@@ -43,22 +44,21 @@ sub _build_test_repo {
     local $CWD = 't';
     diag 'Extracting test repo';
     Archive::Tar->extract_archive($self->test_repo_name . '.tar.gz');
-    return Path::Class::Dir->new('t/' . $self->test_repo_name);
+    return path('t/' . $self->test_repo_name);
 }
 
-after teardown  => sub { shift->test_repo->rmtree };
+after teardown => sub { shift->test_repo->remove_tree({safe => 0}) };
 after each_test => sub { shift->clear_tzil };
 
 sub test_changes {
     my ($self, $expected_name) = @_;
 
-    my $changes_file = $self->tzil->tempdir->file('build/Changes');
+    my $changes_file = $self->tzil->tempdir->child('build/Changes');
     changes_file_ok $changes_file;
 
-    my $expected_file = Path::Class::File->new("t/changes/$expected_name");
-    my @expected_changes =
-      $expected_file->slurp(iomode => '<:encoding(UTF-8)');
-    my @got_changes = $changes_file->slurp(iomode => '<:encoding(UTF-8)');
+    my $expected_file    = path "t/changes/$expected_name";
+    my @expected_changes = $expected_file->lines_utf8;
+    my @got_changes      = $changes_file->lines_utf8;
 
     # everything should match except the date
     foreach (my $i = 0 ; $i < scalar @expected_changes ; $i++) {

@@ -238,14 +238,14 @@ sub after_build {
 
     return unless $self->copy_to_root;
 
-    my $build_file = $args->{build_root}->file($self->file_name);
+    my $build_file = $args->{build_root}->child($self->file_name);
 
-    my $root_file = $self->zilla->root->file($self->file_name);
+    my $root_file = $self->zilla->root->child($self->file_name);
     $self->log_debug("Copying changes file from $build_file to $root_file");
     if (!-e $build_file) {
         $self->logger->log_fatal("Where is the changelog?");
     }
-    $build_file->copy_to($root_file);
+    $build_file->copy($root_file);
 
     return;
 }
