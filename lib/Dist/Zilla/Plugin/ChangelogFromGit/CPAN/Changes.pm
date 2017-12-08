@@ -207,8 +207,15 @@ sub gather_files {
 
     if (!$ENV{DZIL_RELEASING}) {
         $self->log(
-            'We are not performing a release, so not wasting time creating a changelog'
+            'We are not performing a release, so not wasting time updating changelog'
         );
+
+        $self->add_file(
+            Dist::Zilla::File::InMemory->new({
+                    content => $self->_changes->serialize,
+                    name    => $self->file_name,
+                }));
+
         return;
     }
 
