@@ -4,9 +4,6 @@ color = 1
 [ValuesAndExpressions::RequireNumberSeparators]
 min_value = 100000
 
-# not for git
-[-Miscellanea::RequireRcsKeywords]
-
 [InputOutput::RequireCheckedSyscalls]
 functions = :builtins
 exclude_functions = print say
