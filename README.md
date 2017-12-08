@@ -4,7 +4,7 @@ Dist::Zilla::Plugin::ChangelogFromGit::CPAN::Changes - Generate valid CPAN::Chan
 
 # VERSION
 
-version 0.173420
+version 0.173421
 
 # SYNOPSIS
 
