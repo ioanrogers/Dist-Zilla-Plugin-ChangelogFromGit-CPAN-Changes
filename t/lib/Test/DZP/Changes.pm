@@ -15,20 +15,22 @@ has test_repo      => (is => 'lazy');
 has tzil           => (is => 'lazy', clearer  => 1);
 has tzil_ini       => (is => 'rw');
 
+# initialise the Dzil test builder object
 sub _build_tzil {
     my $self = shift;
     my $tzil = Builder->from_config(
         {dist_root => $self->test_repo},
         {add_files => $self->tzil_ini},
     );
-    $tzil->build;
     return $tzil;
 }
 
+# generates the dzil.ini
 sub _set_tzil_ini_opts {
     my $self = shift;
 
-    my @opts = (['GatherDir' => {exclude_filename => 'Changes'}]);
+    my @opts =
+      (['GatherDir' => {exclude_filename => 'Changes'}], 'FakeRelease');
 
     if (scalar @_ == 0) {
         push @opts, 'ChangelogFromGit::CPAN::Changes';
@@ -39,6 +41,7 @@ sub _set_tzil_ini_opts {
     $self->tzil_ini({'source/dist.ini' => simple_ini(@opts)});
 }
 
+# extracts the test git repo from a tarball
 sub _build_test_repo {
     my $self = shift;
     local $CWD = 't';
@@ -52,6 +55,8 @@ after each_test => sub { shift->clear_tzil };
 
 sub test_changes {
     my ($self, $expected_name) = @_;
+
+    $self->tzil->release;
 
     my $changes_file = $self->tzil->tempdir->child('build/Changes');
     changes_file_ok $changes_file;

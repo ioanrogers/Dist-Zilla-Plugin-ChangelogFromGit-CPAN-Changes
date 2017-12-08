@@ -205,6 +205,13 @@ sub _build__last_release {
 sub gather_files {
     my $self = shift;
 
+    if (!$ENV{DZIL_RELEASING}) {
+        $self->log(
+            'We are not performing a release, so not wasting time creating a changelog'
+        );
+        return;
+    }
+
     $self->_get_tags;
     $self->_get_changes;
 
@@ -236,6 +243,7 @@ sub gather_files {
 sub after_build {
     my ($self, $args) = @_;
 
+    return unless $ENV{DZIL_RELEASING};
     return unless $self->copy_to_root;
 
     my $build_file = $args->{build_root}->child($self->file_name);

@@ -2,6 +2,15 @@ use Test::Roo;
 use lib 't/lib';
 with 'Test::DZP::Changes';
 
+test not_releasing_no_changelog => sub {
+    my $self = shift;
+    $self->_set_tzil_ini_opts;
+    $ENV{DZIL_RELEASING} = 0;
+    $self->tzil->build;
+    my $changes_file = $self->tzil->tempdir->child('build/Changes');
+    ok !$changes_file->is_file, 'No changes file created';
+};
+
 test v1_defaults => sub {
     my $self = shift;
     $self->_set_tzil_ini_opts;
