@@ -2,7 +2,7 @@ package Dist::Zilla::Plugin::ChangelogFromGit::CPAN::Changes;
 
 # ABSTRACT: Generate valid CPAN::Changes Changelogs from git
 
-use v5.10.1;
+use v5.24;
 use Moose;
 use Moose::Util::TypeConstraints;
 use Class::Load 'try_load_class';
