@@ -1,4 +1,4 @@
-package Dist::Zilla::Plugin::ChangelogFromGit::CPAN::Changes;
+package Dist::Zilla::Plugin::ChangelogFromGit::CPAN::Changes 0.230480;
 
 # ABSTRACT: Generate valid CPAN::Changes Changelogs from git
 
@@ -22,52 +22,15 @@ subtype 'CoercedRegexpRef' => as 'RegexpRef';
 
 coerce 'CoercedRegexpRef' => from 'Str' => via {qr/$_[0]/};
 
-=attr group_by_author
-
-Whether to group commit messages by their author. This is the only way previous
-versions did it. Defaults to no, and [ Anne Author ] is appended to the commit
-message.
-
-Defaults to off.
-
-=cut
 
 has group_by_author => ( is => 'ro', isa => 'Bool', default => 0);
 
-=attr show_author_email
-
-Author email is probably just noise for most people, but turn this on if you
-want to show it [ Anne Author <anne@author.com> ]
-
-Defaults to off.
-
-=cut
 
 has show_author_email => ( is => 'ro', isa => 'Bool', default => 0);
 
-=attr show_author
-
-Whether to show authors at all. Turning this off also
-turns off grouping by author and author emails.
-
-Defaults to on.
-
-=cut
 
 has show_author => ( is => 'ro', isa => 'Bool', default => 1);
 
-=attr C<tag_regexp>
-
-A regexp string which will be used to match git tags to find releases. If your
-release tags are not compliant with L<CPAN::Changes::Spec>, you can use a
-capture group. It will be used as the version in place of the full tag name.
-
-Also takes C<semantic>, which becomes C<qr{^v?(\d+\.\d+\.\d+)$}>, and
-C<decimal>, which becomes C<qr{^v?(\d+\.\d+)$}>.
-
-Defaults to 'decimal'
-
-=cut
 
 has tag_regexp => (
     is      => 'ro',
@@ -76,23 +39,9 @@ has tag_regexp => (
     default => 'v?(\d+\.\d+(_\d+)?)'
 );
 
-=attr C<file_name>
-
-The name of the changelog file.
-
-Defaults to 'Changes'.
-
-=cut
 
 has file_name => (is => 'ro', isa => 'Str', default => 'Changes');
 
-=attr C<preamble>
-
-Block of text at the beginning of the changelog.
-
-Defaults to 'Changelog for $dist_name'
-
-=cut
 
 has preamble => (
     is      => 'ro',
@@ -101,25 +50,9 @@ has preamble => (
     default => sub { 'Changelog for ' . $_[0]->zilla->name },
 );
 
-=attr C<copy_to_root>
-
-When true, the generated changelog will be copied into the root folder where it
-can be committed (possiby automatically by L<Dist::Zilla::Plugin::Git::Commit>)
-
-Defaults to true.
-
-=cut
 
 has copy_to_root => (is => 'ro', isa => 'Bool', default => 1);
 
-=attr C<edit_changelog>
-
-When true, the generated changelog will be opened in an editor to allow manual
-editing.
-
-Defaults to false.
-
-=cut
 
 has edit_changelog => (is => 'ro', isa => 'Bool', default => 0);
 
@@ -456,6 +389,23 @@ __PACKAGE__->meta->make_immutable;
 
 1;
 
+__END__
+
+=pod
+
+=encoding UTF-8
+
+=for :stopwords Ioan Rogers cpan testmatrix url bugtracker rt cpants kwalitee diff irc
+mailto metadata placeholders metacpan
+
+=head1 NAME
+
+Dist::Zilla::Plugin::ChangelogFromGit::CPAN::Changes - Generate valid CPAN::Changes Changelogs from git
+
+=head1 VERSION
+
+version 0.230480
+
 =head1 SYNOPSIS
 
  [ChangelogFromGit::CPAN::Changes]
@@ -464,3 +414,115 @@ __PACKAGE__->meta->make_immutable;
  show_author_email     = 1 ; default 0
  show_author           = 0 ; default 1
  edit_changelog        = 1 ; default 0
+
+=head1 ATTRIBUTES
+
+=head2 group_by_author
+
+Whether to group commit messages by their author. This is the only way previous
+versions did it. Defaults to no, and [ Anne Author ] is appended to the commit
+message.
+
+Defaults to off.
+
+=head2 show_author_email
+
+Author email is probably just noise for most people, but turn this on if you
+want to show it [ Anne Author <anne@author.com> ]
+
+Defaults to off.
+
+=head2 show_author
+
+Whether to show authors at all. Turning this off also
+turns off grouping by author and author emails.
+
+Defaults to on.
+
+=head2 C<tag_regexp>
+
+A regexp string which will be used to match git tags to find releases. If your
+release tags are not compliant with L<CPAN::Changes::Spec>, you can use a
+capture group. It will be used as the version in place of the full tag name.
+
+Also takes C<semantic>, which becomes C<qr{^v?(\d+\.\d+\.\d+)$}>, and
+C<decimal>, which becomes C<qr{^v?(\d+\.\d+)$}>.
+
+Defaults to 'decimal'
+
+=head2 C<file_name>
+
+The name of the changelog file.
+
+Defaults to 'Changes'.
+
+=head2 C<preamble>
+
+Block of text at the beginning of the changelog.
+
+Defaults to 'Changelog for $dist_name'
+
+=head2 C<copy_to_root>
+
+When true, the generated changelog will be copied into the root folder where it
+can be committed (possiby automatically by L<Dist::Zilla::Plugin::Git::Commit>)
+
+Defaults to true.
+
+=head2 C<edit_changelog>
+
+When true, the generated changelog will be opened in an editor to allow manual
+editing.
+
+Defaults to false.
+
+=head1 SUPPORT
+
+=head2 Perldoc
+
+You can find documentation for this module with the perldoc command.
+
+  perldoc Dist::Zilla::Plugin::ChangelogFromGit::CPAN::Changes
+
+=head2 Websites
+
+The following websites have more information about this module, and may be of help to you. As always,
+in addition to those websites please use your favorite search engine to discover more resources.
+
+=over 4
+
+=item *
+
+MetaCPAN
+
+A modern, open-source CPAN search engine, useful to view POD in HTML format.
+
+L<https://metacpan.org/release/Dist-Zilla-Plugin-ChangelogFromGit-CPAN-Changes>
+
+=back
+
+=head2 Bugs / Feature Requests
+
+Please report any bugs or feature requests through the web interface at L<https://github.com/ioanrogers/Dist-Zilla-Plugin-ChangelogFromGit-CPAN-Changes.git/issues>.
+You will be automatically notified of any progress on the request by the system.
+
+=head2 Source Code
+
+The source code is available for from the following locations:
+
+L<https://github.com/ioanrogers/Dist-Zilla-Plugin-ChangelogFromGit-CPAN-Changes.git>
+
+  git clone https://github.com/ioanrogers/Dist-Zilla-Plugin-ChangelogFromGit-CPAN-Changes.git.git
+
+=head1 AUTHOR
+
+Ioan Rogers <ioanr@cpan.org>
+
+=head1 COPYRIGHT AND LICENSE
+
+This software is copyright (c) 2023 by Ioan Rogers.
+
+This is free software; you can redistribute it and/or modify it under
+the same terms as the Perl 5 programming language system itself.
+
+=cut
