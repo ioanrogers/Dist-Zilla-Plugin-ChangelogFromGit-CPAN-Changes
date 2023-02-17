@@ -269,11 +269,13 @@ sub _get_tags {
     my $self = shift;
     $self->logger->log_debug(
         'Searching for tags matching ' . $self->tag_regexp);
+    my @tags;
     foreach my $tag ($self->_git->RUN('tag')) {
         next unless $tag =~ $self->tag_regexp;
-        push @{$self->_tags}, $tag;
+        push @tags, $tag;
     }
 
+    @{$self->_tags} = sort { version->parse($a) <=> version->parse($b) } @tags;
     push @{$self->_tags}, 'HEAD';
     return;
 }
