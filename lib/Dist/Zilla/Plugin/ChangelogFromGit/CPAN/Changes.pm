@@ -272,10 +272,10 @@ sub _get_tags {
     my @tags;
     foreach my $tag ($self->_git->RUN('tag')) {
         next unless $tag =~ $self->tag_regexp;
-        push @tags, $tag;
+        push @tags, [ version->parse($1), $tag ];
     }
 
-    @{$self->_tags} = sort { version->parse($a) <=> version->parse($b) } @tags;
+    @{$self->_tags} = map { $_->[1] } sort { $a->[0] <=> $b->[0] } @tags;
     push @{$self->_tags}, 'HEAD';
     return;
 }
